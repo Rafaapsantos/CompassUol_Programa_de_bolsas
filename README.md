@@ -2,7 +2,7 @@
 # Apresentação 
 Meu nome é **Rafaela Aparecida Dos Santos**, resido na cidade de Franca-SP, atualmente sou estudadnte do 4° semestre de **Análise e Desenvolvimento de Sistemas na Fatec Franca** - Faculdade de Tecnologia de Franca Dr Thomaz Novelino, com uma paixão intensa por tecnologia e inovação.
 
-(https://github.com/user-attachments/assets/54b02878-a4e3-45f1-a173-fcbaaa920e7b)
+![Essa Sou Eu!"](https://github.com/user-attachments/assets/75fee045-10b9-47e4-b495-e7e863c95324)
 
 # Habilidades
 Possuo habilidades técnicas em diversas tecnologias, incluindo Flutter, Dart, Power BI, Análise de Dados, Java e JavaScript. Essas ferramentas me permitem desenvolver soluções eficientes e inovadoras. Além disso, estou aprimorando minhas habilidades de comunicação ao estudar inglês, o que amplia minhas perspectivas globais e me prepara melhor para o mercado de trabalho.
