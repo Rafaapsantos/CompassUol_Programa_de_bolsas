@@ -12,14 +12,14 @@ Sou uma pessoa resiliente, responsável e disciplinada, com forte foco em soft s
 
 # Sprints 
 1. [Sprint 1](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint1)
-2. []()
-3. []()
-4. []()
-5. []()
-6. []()
-7. []()
-8. []()
-9. []()
-10. []()
+2. [Sprint 2](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/script2)
+3. [Sprint 3](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/script3)
+4. [Sprint 4](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/script4)
+5. [Sprint 5](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/script5)
+6. [Sprint 6](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/script6)
+7. [Sprint 7](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/script7)
+8. [Sprint 8](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/script8)
+9. [Sprint 9](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/script9)
+10. [Sprint 10](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/script10)
     
 
