@@ -14,14 +14,16 @@
 ![crontab](https://github.com/user-attachments/assets/21a66519-a1d6-426f-b33c-acbaa40d80c0)
 
 ### 5° - Iniciei o crontab todos os dias e ele rodou o script criando os relatorios
-![crontab](https://github.com/user-attachments/assets/5c1eda99-35d9-453a-be9c-6b18871c50d0)
+![crontab](https://github.com/user-attachments/assets/a895b274-d536-4607-9d23-a882991cf4d5)
 
 ### 6° - Após o crontab executar o script, o cenario é esse: 
 ##### Dentro do diretório ecommerce, foi criado uma pasta vendas, que dentro dessa pasta vendas foi criado uma pasta backup. Dentro da pasta backup, foi criado o relatorio e um arquivo zip.
-![cenario](https://github.com/user-attachments/assets/154671bd-3d1e-46e8-b511-cb2c44aa45d4)
+![cenario](https://github.com/user-attachments/assets/cbba2ba8-9fe6-4aa2-9d3b-0fddbb3b7e83)
+
 
 ### 7° - Após o script ser executado eu parei o crontab.
-![crontab](https://github.com/user-attachments/assets/f940c121-b6b7-4b6e-b5ab-20ffcb3aa8a8)
+![crontab](https://github.com/user-attachments/assets/2aad8b3e-0088-4aea-9142-f0c426c040a8)
+
 
 ### 8° - Depois de rodar o script usando o crontab os 4 dias, eu fiz um script chamado consolidador_de_processamento_de_vendas.sh que juntou todos os relatórios dos 4 dias em um único relatorio 
 ![consolidador](https://github.com/user-attachments/assets/cc5ee5b7-7b05-410c-a43a-c2834f0aad44)
