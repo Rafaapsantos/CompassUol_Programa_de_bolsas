@@ -29,6 +29,8 @@
 ![consolidador](https://github.com/user-attachments/assets/cc5ee5b7-7b05-410c-a43a-c2834f0aad44)
 ![consolidador](https://github.com/user-attachments/assets/bfa663ec-f04b-4ba6-b76e-7b9432543295)
 
-### 9° - Executei manualmente o script consolidador_de_processamento_de_vendas.sh
+### 9° - Tornei o arquivo consolidador_de_processamento_de_vendas.sh executável.
 
-### 10° - Após isso foi criado o relatorio_final.txt, onde contém todos os relatórios.
+### 10° - Executei manualmente o script consolidador_de_processamento_de_vendas.sh
+
+### 9° - Após isso foi criado o relatorio_final.txt, onde contém todos os relatórios.
