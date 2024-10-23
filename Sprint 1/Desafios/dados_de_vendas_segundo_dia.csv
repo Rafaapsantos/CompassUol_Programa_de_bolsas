@@ -1,0 +1,86 @@
+id,produto,quantidade,preço,data
+1,camisa polo,4,35.90,01/01/2023
+2,calça jeans,6,90.00,02/01/2023
+3,jaqueta de couro,2,150.00,03/01/2023
+4,boné trucker,12,25.00,04/01/2023
+5,óculos de sol,8,75.00,05/01/2023
+6,carteira de couro,7,55.00,06/01/2023
+7,chinelo,10,20.00,07/01/2023
+8,moletom,5,110.00,08/01/2023
+9,relogio digital,3,200.00,09/01/2023
+10,maleta de couro,6,120.00,10/01/2023
+11,cinto de couro,7,40.00,11/01/2023
+12,bolsa de viagem,4,180.00,12/01/2023
+13,camiseta estampada,9,30.00,13/01/2023
+14,bermuda de praia,15,50.00,14/01/2023
+15,vestido longo,3,120.00,15/01/2023
+16,blusa de frio,4,90.00,16/01/2023
+17,cachecol,10,20.00,17/01/2023
+18,calça social,5,85.00,18/01/2023
+19,gravata,8,30.00,19/01/2023
+20,pulseira de prata,12,70.00,20/01/2023
+21,colar de ouro,2,800.00,21/01/2023
+22,chapéu de palha,15,35.00,22/01/2023
+23,casaco de lã,3,200.00,23/01/2023
+24,sapato social,5,150.00,24/01/2023
+25,bota de couro,4,250.00,25/01/2023
+26,lenço de seda,10,45.00,26/01/2023
+27,brincos de ouro,6,500.00,27/01/2023
+28,anel de prata,12,100.00,28/01/2023
+29,meias esportivas,20,10.00,29/01/2023
+30,sandália de couro,7,60.00,30/01/2023
+31,óculos de leitura,9,120.00,31/01/2023
+32,relógio analógico,3,350.00,01/02/2023
+33,calça cargo,4,80.00,02/02/2023
+34,mocassim,5,200.00,03/02/2023
+35,suéter de lã,2,150.00,04/02/2023
+36,coturno,6,180.00,05/02/2023
+37,cinto trançado,12,25.00,06/02/2023
+38,bolsa de mão,3,250.00,07/02/2023
+39,luvas de couro,7,45.00,08/02/2023
+40,colete de inverno,4,160.00,09/02/2023
+41,sandália de salto,8,90.00,10/02/2023
+42,saia midi,5,70.00,11/02/2023
+43,camiseta básica,18,20.00,12/02/2023
+44,blusa de seda,6,130.00,13/02/2023
+45,camiseta de algodão,10,25.00,14/02/2023
+46,calça legging,12,40.00,15/02/2023
+47,camisola de dormir,9,80.00,16/02/2023
+48,robe de seda,7,150.00,17/02/2023
+49,maiô,8,60.00,18/02/2023
+50,short jeans,11,55.00,19/02/2023
+51,biquíni,10,70.00,20/02/2023
+52,moletom com capuz,3,110.00,21/02/2023
+53,camiseta manga longa,15,45.00,22/02/2023
+54,saia plissada,6,85.00,23/02/2023
+55,bermuda de sarja,9,65.00,24/02/2023
+56,blazer,4,250.00,25/02/2023
+57,casaco trench coat,2,300.00,26/02/2023
+58,boné de couro,5,90.00,27/02/2023
+59,camiseta slim fit,8,40.00,28/02/2023
+60,bermuda cargo,12,55.00,01/03/2023
+61,calça de moletom,6,60.00,02/03/2023
+62,sandália rasteira,9,80.00,03/03/2023
+63,regata de malha,15,25.00,04/03/2023
+64,polo básica,10,50.00,05/03/2023
+65,blusa com decote,8,60.00,06/03/2023
+66,camiseta estampada,7,45.00,07/03/2023
+67,cinto de couro,10,55.00,08/03/2023
+68,meias de lã,20,15.00,09/03/2023
+69,gravata borboleta,5,25.00,10/03/2023
+70,bermuda de algodão,12,35.00,11/03/2023
+71,camisa social,6,90.00,12/03/2023
+72,sapato de camurça,5,150.00,13/03/2023
+73,short de moletom,10,40.00,14/03/2023
+74,calça de veludo,3,120.00,15/03/2023
+75,saia de couro,4,180.00,16/03/2023
+76,camiseta vintage,12,35.00,17/03/2023
+77,vestido de festa,5,250.00,18/03/2023
+78,blusa com bordado,6,90.00,19/03/2023
+79,calça skinny,7,85.00,20/03/2023
+80,sapato esportivo,10,200.00,21/03/2023
+81,camiseta retrô,9,50.00,22/03/2023
+82,casaco de inverno,4,320.00,23/03/2023
+83,camisa xadrez,8,45.00,24/03/2023
+84,calça flare,5,110.00,25/03/2023
+85,mochila de couro,3,250.00,26/03/2023
