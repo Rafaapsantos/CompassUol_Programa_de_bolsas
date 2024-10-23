@@ -1,5 +1,5 @@
 ### 1° - Comecei o desafio criando o diretório ecommerce e colocando o arquivo dados_de_venda.csv dentro dele.
-![criando_ecommerce](https://github.com/user-attachments/assets/4325b24a-eaf5-4f7c-bc20-9731bae28da9)
+![criando_ecommerce](Sprint 1/Evidencias /evidencia1.jpeg)
 
 ### 2° - Depois eu fiz o scrpit processamento_de_vendas.sh usando o editor de texto nano. 
 
@@ -17,7 +17,7 @@
 ![crontab](https://github.com/user-attachments/assets/a895b274-d536-4607-9d23-a882991cf4d5)
 
 ### 6° - Após o crontab executar o script, o cenario é esse: 
-##### Dentro do diretório ecommerce, foi criado uma pasta vendas, que dentro dessa pasta vendas foi criado uma pasta backup. Dentro da pasta backup, foi criado o relatorio e um arquivo zip.
+Dentro do diretório ecommerce, foi criado uma pasta vendas, que dentro dessa pasta vendas foi criado uma pasta backup. Dentro da pasta backup, foi criado o relatorio e um arquivo zip.
 ![cenario](https://github.com/user-attachments/assets/cbba2ba8-9fe6-4aa2-9d3b-0fddbb3b7e83)
 
 
