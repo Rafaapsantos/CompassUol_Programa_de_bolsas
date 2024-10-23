@@ -1,5 +1,5 @@
 ### 1° - Comecei o desafio criando o diretório ecommerce e colocando o arquivo dados_de_venda.csv dentro dele.
-![criando_ecommerce](Sprint 1/Evidencias /evidencia1.jpeg)
+![criando_ecommerce](/Sprint%201/Evidencias/evidencia1.jpeg)
 
 ### 2° - Depois eu fiz o scrpit processamento_de_vendas.sh usando o editor de texto nano. 
 
