@@ -1,2 +1,2 @@
 # Exercícios 
-#### não teve exercícios fora da udemy nessa sprint
+#### não teve exercícios nessa sprint
