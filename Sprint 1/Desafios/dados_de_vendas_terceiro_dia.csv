@@ -1,0 +1,66 @@
+id,produto,quantidade,preço,data
+1,sapatilha de ballet,8,150.00,27/03/2023
+2,boné de aba reta,12,35.00,28/03/2023
+3,lenço de lã,10,30.00,29/03/2023
+4,óculos de proteção,9,60.00,30/03/2023
+5,blusa de manga curta,15,20.00,31/03/2023
+6,camiseta fitness,18,30.00,01/04/2023
+7,jaqueta jeans,5,120.00,02/04/2023
+8,blusa de tricô,6,80.00,03/04/2023
+9,short de praia,12,40.00,04/04/2023
+10,camiseta gola V,9,30.00,05/04/2023
+11,vestido de malha,8,120.00,06/04/2023
+12,cinto de tecido,15,25.00,07/04/2023
+13,bermuda de linho,7,65.00,08/04/2023
+14,camiseta com bolso,12,35.00,09/04/2023
+15,calça wide leg,4,95.00,10/04/2023
+16,camiseta lisa,15,20.00,11/04/2023
+17,meias invisíveis,18,12.00,12/04/2023
+18,sandália de salto bloco,6,110.00,13/04/2023
+19,chapéu fedora,3,75.00,14/04/2023
+20,blusa ciganinha,8,60.00,15/04/2023
+21,calça clochard,7,85.00,16/04/2023
+22,vestido curto,5,90.00,17/04/2023
+23,camisa polo listrada,4,55.00,18/04/2023
+24,casaco de lã,6,250.00,19/04/2023
+25,pochete de couro,10,70.00,20/04/2023
+26,lenço de cetim,15,35.00,21/04/2023
+27,short de corrida,12,30.00,22/04/2023
+28,jaqueta corta-vento,5,150.00,23/04/2023
+29,calça pantacourt,4,85.00,24/04/2023
+30,sapato de salto alto,6,180.00,25/04/2023
+31,camiseta oversized,9,45.00,26/04/2023
+32,calça jeans rasgada,5,90.00,27/04/2023
+33,camisa social slim,3,110.00,28/04/2023
+34,camiseta básica branca,20,15.00,29/04/2023
+35,calça jogger,10,65.00,30/04/2023
+36,saia longa,6,120.00,01/05/2023
+37,cinto de couro liso,12,30.00,02/05/2023
+38,camiseta com estampa floral,7,40.00,03/05/2023
+39,boné camuflado,8,35.00,04/05/2023
+40,camiseta com gola redonda,15,25.00,05/05/2023
+41,calça reta,6,100.00,06/05/2023
+42,vestido listrado,9,150.00,07/05/2023
+43,camiseta slim preta,8,45.00,08/05/2023
+44,short de corrida esportivo,12,50.00,09/05/2023
+45,calça montaria,7,120.00,10/05/2023
+46,blusa gola alta,6,70.00,11/05/2023
+47,camiseta com detalhe nas mangas,15,30.00,12/05/2023
+48,calça de cintura alta,8,80.00,13/05/2023
+49,vestido evasê,5,140.00,14/05/2023
+50,blusa de alça,9,45.00,15/05/2023
+51,camisa social listrada,4,95.00,16/05/2023
+52,camiseta com gola polo,10,55.00,17/05/2023
+53,saia jeans,7,65.00,18/05/2023
+54,camiseta de banda,12,40.00,19/05/2023
+55,calça de sarja,6,70.00,20/05/2023
+56,bermuda estampada,8,45.00,21/05/2023
+57,camiseta tie-dye,9,50.00,22/05/2023
+58,camisa com detalhes bordados,6,60.00,23/05/2023
+59,vestido de linho,5,180.00,24/05/2023
+60,camiseta básica azul,15,20.00,25/05/2023
+61,sapato de salto grosso,7,200.00,26/05/2023
+62,blusa estampada,12,40.00,27/05/2023
+63,bermuda de moletom,10,55.00,28/05/2023
+64,camisa social preta,4,100.00,29/05/2023
+65,jaqueta de nylon,3,250.00,30/05/2023
