@@ -18,15 +18,15 @@ Sou uma pessoa resiliente, responsável e disciplinada, com forte foco em soft s
 * GitHub
 ### Sprint 2
 * SQL
-* AWS Skill Builder
+* AWS Skill Builder - AWS Parter sales Accreditation(Business)
 ### Sprint 3
 * Python
-* AWS Partner
+* AWS Partner - Economias na nuvem
 ### Sprint 4
 * Programaçõ funcional
 * Python
 * Docker 
-* AWS Skill Builder
+* AWS Skill Builder - AWS Partner: Accreditation
 * Estatística Descritiva com Python
 ### Sprint 5
 * AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner
