@@ -10,7 +10,7 @@
 ### 3° - Tornei o arquivo processamento_de_vendas.sh executável.
 ![evidencia3](/Sprint%201/Evidencias/evidencia3.jpeg)
 
-### 4° - Fiz um agendamento usando o crontab para executar todos os dias da semana as 15:27
+### 4° - Fiz um agendamento usando o crontab para executar de terça a sexta as 15:27
 ![evidencia4](/Sprint%201/Evidencias/evidencia4.jpeg)
 ![evidencia4.1](/Sprint%201/Evidencias/evidencia4.1.jpeg.png)
 
