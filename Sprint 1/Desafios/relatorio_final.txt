@@ -1,0 +1,56 @@
+id,produto,quantidade,preço,data
+1,camiseta,2,29.90,01/01/2023
+2,calça,5,80.00,02/01/2023
+3,sapato,3,100.00,03/01/2023
+4,meia,20,5.00,04/01/2023
+5,cinto,8,15.00,05/01/2023
+6,camisa,7,40.00,06/01/2023
+7,bermuda,6,50.00,07/01/2023
+8,tênis,4,120.00,08/01/2023
+9,bone,12,10.00,09/01/2023
+2024/10/22 15:27
+DATA DA PRIMEIRA VENDA: 01/01/2023
+DATA DA ULTIMA VENDA: 31/01/2023
+QUANTIDADE TOTAL DE ITENS QUE SÃO DIFERENTES VENDIDOS: 66
+id,produto,quantidade,preço,data
+1,camisa polo,4,35.90,01/01/2023
+2,calça jeans,6,90.00,02/01/2023
+3,jaqueta de couro,2,150.00,03/01/2023
+4,boné trucker,12,25.00,04/01/2023
+5,óculos de sol,8,75.00,05/01/2023
+6,carteira de couro,7,55.00,06/01/2023
+7,chinelo,10,20.00,07/01/2023
+8,moletom,5,110.00,08/01/2023
+9,relogio digital,3,200.00,09/01/2023
+2024/10/23 15:27
+DATA DA PRIMEIRA VENDA: 01/01/2023
+DATA DA ULTIMA VENDA: 26/03/2023
+QUANTIDADE TOTAL DE ITENS QUE SÃO DIFERENTES VENDIDOS: 83
+id,produto,quantidade,preço,data
+1,sapatilha de ballet,8,150.00,27/03/2023
+2,boné de aba reta,12,35.00,28/03/2023
+3,lenço de lã,10,30.00,29/03/2023
+4,óculos de proteção,9,60.00,30/03/2023
+5,blusa de manga curta,15,20.00,31/03/2023
+6,camiseta fitness,18,30.00,01/04/2023
+7,jaqueta jeans,5,120.00,02/04/2023
+8,blusa de tricô,6,80.00,03/04/2023
+9,short de praia,12,40.00,04/04/2023
+2024/10/24 15:27
+DATA DA PRIMEIRA VENDA: 27/03/2023
+DATA DA ULTIMA VENDA: 30/05/2023
+QUANTIDADE TOTAL DE ITENS QUE SÃO DIFERENTES VENDIDOS: 65
+id,produto,quantidade,preço,data
+1,cachecol de lã,10,50.00,01/06/2023
+2,luvas de couro,7,80.00,02/06/2023
+3,suéter de algodão,12,90.00,03/06/2023
+4,bermuda jeans,15,60.00,04/06/2023
+5,saia plissada,8,70.00,05/06/2023
+6,sandália rasteira,10,45.00,06/06/2023
+7,calça cargo,6,100.00,07/06/2023
+8,blusa ombro a ombro,12,55.00,08/06/2023
+9,camisa xadrez,9,60.00,09/06/2023
+2024/10/25 15:27
+DATA DA PRIMEIRA VENDA: 01/06/2023
+DATA DA ULTIMA VENDA: 25/06/2023
+QUANTIDADE TOTAL DE ITENS QUE SÃO DIFERENTES VENDIDOS: 25

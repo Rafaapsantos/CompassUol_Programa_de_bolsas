@@ -1,0 +1,14 @@
+id,produto,quantidade,preço,data
+1,camisa polo,4,35.90,01/01/2023
+2,calça jeans,6,90.00,02/01/2023
+3,jaqueta de couro,2,150.00,03/01/2023
+4,boné trucker,12,25.00,04/01/2023
+5,óculos de sol,8,75.00,05/01/2023
+6,carteira de couro,7,55.00,06/01/2023
+7,chinelo,10,20.00,07/01/2023
+8,moletom,5,110.00,08/01/2023
+9,relogio digital,3,200.00,09/01/2023
+2024/10/23 15:27
+DATA DA PRIMEIRA VENDA: 01/01/2023
+DATA DA ULTIMA VENDA: 26/03/2023
+QUANTIDADE TOTAL DE ITENS QUE SÃO DIFERENTES VENDIDOS: 83

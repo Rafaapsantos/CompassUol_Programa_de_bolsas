@@ -1,0 +1,14 @@
+id,produto,quantidade,preço,data
+1,cachecol de lã,10,50.00,01/06/2023
+2,luvas de couro,7,80.00,02/06/2023
+3,suéter de algodão,12,90.00,03/06/2023
+4,bermuda jeans,15,60.00,04/06/2023
+5,saia plissada,8,70.00,05/06/2023
+6,sandália rasteira,10,45.00,06/06/2023
+7,calça cargo,6,100.00,07/06/2023
+8,blusa ombro a ombro,12,55.00,08/06/2023
+9,camisa xadrez,9,60.00,09/06/2023
+2024/10/25 15:27
+DATA DA PRIMEIRA VENDA: 01/06/2023
+DATA DA ULTIMA VENDA: 25/06/2023
+QUANTIDADE TOTAL DE ITENS QUE SÃO DIFERENTES VENDIDOS: 25

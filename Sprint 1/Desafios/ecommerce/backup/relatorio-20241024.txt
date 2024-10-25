@@ -1,0 +1,14 @@
+id,produto,quantidade,preço,data
+1,sapatilha de ballet,8,150.00,27/03/2023
+2,boné de aba reta,12,35.00,28/03/2023
+3,lenço de lã,10,30.00,29/03/2023
+4,óculos de proteção,9,60.00,30/03/2023
+5,blusa de manga curta,15,20.00,31/03/2023
+6,camiseta fitness,18,30.00,01/04/2023
+7,jaqueta jeans,5,120.00,02/04/2023
+8,blusa de tricô,6,80.00,03/04/2023
+9,short de praia,12,40.00,04/04/2023
+2024/10/24 15:27
+DATA DA PRIMEIRA VENDA: 27/03/2023
+DATA DA ULTIMA VENDA: 30/05/2023
+QUANTIDADE TOTAL DE ITENS QUE SÃO DIFERENTES VENDIDOS: 65
