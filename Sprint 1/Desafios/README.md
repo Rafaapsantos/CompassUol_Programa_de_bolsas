@@ -22,6 +22,7 @@ Dentro do diretório ecommerce, foi criado uma pasta vendas, que dentro dessa pa
 ![evidencia6](/Sprint%201/Evidencias/evidencia6.jpeg)
 
 ### 6.1° -  Depois do crontab ter executado o script por 4 dias, o cenario é esse: 
+No último dia, ao alterar o arquivo CSV, inseri produtos duplicados para testar se o script realmente identificava produtos diferentes, e funcionou conforme esperado.
 ![evidencia6.1](/Sprint%201/Evidencias/evidencia6.1.jpeg)
 
 ### 7° - Após o script ser executado eu parei o crontab.
