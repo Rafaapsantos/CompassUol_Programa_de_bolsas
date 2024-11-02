@@ -2,7 +2,7 @@
 # Apresentação 
 Meu nome é **Rafaela Aparecida Dos Santos**, resido na cidade de Franca-SP, atualmente sou estudadnte do 4° semestre de **Análise e Desenvolvimento de Sistemas na Fatec Franca** - Faculdade de Tecnologia de Franca Dr Thomaz Novelino, com uma paixão intensa por tecnologia e inovação.
 
-<img src="/assets/foto.jpeg" alt="Essa sou eu!" width="300"/>
+<img src="./assets/foto.jpeg" alt="Essa sou eu!" width="300"/>
 
 
 # Habilidades
