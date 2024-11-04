@@ -5,3 +5,4 @@ WHERE tbvendas.status = 'Concluído'
 GROUP by estado 
 ORDER by gastomedio DESC 
 LIMIT 10
+

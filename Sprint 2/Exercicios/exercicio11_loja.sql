@@ -6,3 +6,4 @@ WHERE tbvendas.status = 'Concluído'
 GROUP by tbvendas.cdcli 
 ORDER by gasto DESC 
 LIMIT 1
+

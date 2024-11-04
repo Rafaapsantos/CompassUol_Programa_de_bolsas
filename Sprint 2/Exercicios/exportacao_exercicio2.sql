@@ -7,4 +7,4 @@ left join editora
 	on livro.editora = editora.codeditora 
 group by editora.codeditora 
 order by QuantidadeLivros desc
-limit 5 
+limit 5

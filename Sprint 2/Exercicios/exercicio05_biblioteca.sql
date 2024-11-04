@@ -7,4 +7,4 @@ left JOIN editora
 left JOIN endereco 
 	on endereco.codendereco = editora.endereco 
 	WHERE endereco.estado NOT IN ('PARANÁ', 'RIO GRANDE DO SUL')
-ORDER BY autor.nome 
+ORDER BY autor.nome

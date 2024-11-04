@@ -6,5 +6,5 @@ left join tbvendedor
 	on tbvendas.cdvdd  = tbvendedor.cdvdd 
 WHERE tbvendas.status = 'Concluído' 
 GROUP BY tbvendedor.nmvdd 
-ORDER by comissao DESC 
+ORDER by comissao DESC
 
