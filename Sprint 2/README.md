@@ -1,6 +1,10 @@
 # Sprint 2
 ## Desafio
+O desafio consiste em aplicar os métodos de SQL ensinados no curso, além dos conceitos de modelagem relacional e modelagem dimensional estudados na Udemy, para normalizar a base de dados da concessionária fornecida, seguindo as formas normais. Em seguida, é necessário transformar a base para um modelo dimensional.
 
+### Etapa 1- Normalização dos dados
+
+### Etapa 2- Modelagem Dimensional
 
 ## Exercícios 
 ### Exercícios - Biblioteca 
@@ -30,13 +34,11 @@
 2. [Exportação 2- Código](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%202/Exercicios/exportacao_exercicio2.sql)
 * [Exportação 2- Arquivo](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%202/Exercicios/5_Editoras_Mais_Publicacoes.csv)
 
-    
-
 ## Certificado 
 [Certificado- AWS](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%202/Certificados)
 
 ## Opnião:
-
+Gostei muito de aprender SQL, pois foi minha primeira experiência com a linguagem. Tive algumas dificuldades no início, então pesquisei em sites externos e fiz várias anotações no Notion para manter tudo organizado e consultar quando necessário. Achei o desafio de normalização de dados bem interessante, pois me permitiu aplicar o que aprendi na prática. Embora eu tenha encontrado dificuldades ao realizar a normalização, consegui alcançar o resultado que planejei.
 
 ## O que aprendi?
 1. SQL

@@ -45,24 +45,6 @@ sexoVendedor int,
 estadoVendedor varchar(20)
 );
 
-DROP table if exists tb_locacao_nova;
-
-CREATE table tb_locacao_nova (
-idLocacao integer primary key autoincrement,
-idCliente int,
-idVendedor int,
-idCarro int,
-dataLocacao date,
-horaLocacao time,
-dataEntrega date, 
-horaEntrega time,
-qtdDiaria int, 
-vlrDiaria decimal,
-FOREIGN KEY (idCliente) REFERENCES tb_cliente(idCliente),
-FOREIGN KEY (idVendedor) REFERENCES tb_vendedor(idVendedor),
-FOREIGN KEY (idCarro) REFERENCES tb_carro(idCarro)
-);
-
 INSERT into tb_combustivel (idCombustivel, tipoCombustivel)
 SELECT DISTINCT 
 tb_locacao.idcombustivel, 
@@ -103,24 +85,40 @@ tb_combustivel.idcombustivel
 from tb_locacao 
 left join tb_combustivel on tb_locacao.idcombustivel = tb_combustivel.idCombustivel;
 
-INSERT INTO tb_locacao_nova (idLocacao, idCliente, idVendedor, idCarro, dataLocacao, horaLocacao, dataEntrega, horaEntrega, qtdDiaria, vlrDiaria)
+ALTER table tb_locacao RENAME TO tb_locacao_nova;
+
+CREATE table tb_locacao (
+idLocacao integer primary key autoincrement,
+idCliente int,
+idVendedor int,
+idCarro int,
+dataLocacao date,
+horaLocacao time,
+dataEntrega date, 
+horaEntrega time,
+qtdDiaria int, 
+vlrDiaria decimal,
+FOREIGN KEY (idCliente) REFERENCES tb_cliente(idCliente),
+FOREIGN KEY (idVendedor) REFERENCES tb_vendedor(idVendedor),
+FOREIGN KEY (idCarro) REFERENCES tb_carro(idCarro)
+);
+
+INSERT INTO tb_locacao (idLocacao, idCliente, idVendedor, idCarro, dataLocacao, horaLocacao, dataEntrega, horaEntrega, qtdDiaria, vlrDiaria)
 SELECT 
-tb_locacao.idLocacao,
-tb_locacao.idCliente,
-tb_locacao.idVendedor,
-tb_locacao.idCarro,
-DATE(SUBSTR(tb_locacao.dataLocacao, 1, 4) || '-' || SUBSTR(tb_locacao.dataLocacao, 5, 2) || '-' || SUBSTR(tb_locacao.dataLocacao, 7, 2)) as dataLocacao,
-tb_locacao.horaLocacao,
-DATE(SUBSTR(tb_locacao.dataEntrega, 1, 4) || '-' || SUBSTR(tb_locacao.dataEntrega, 5, 2) || '-' || SUBSTR(tb_locacao.dataEntrega, 7, 2)) as dataEntrega,
-tb_locacao.horaEntrega,
-tb_locacao.qtdDiaria,
-tb_locacao.vlrDiaria
-from tb_locacao 
-left join tb_cliente on tb_locacao.idCliente = tb_cliente.idCliente 
-left join tb_vendedor on tb_locacao.idVendedor = tb_vendedor.idVendedor 
-left join tb_carro on tb_locacao.idCarro = tb_carro.idCarro;
+tb_locacao_nova.idLocacao,
+tb_locacao_nova.idCliente,
+tb_locacao_nova.idVendedor,
+tb_locacao_nova.idCarro,
+DATE(SUBSTR(tb_locacao_nova.dataLocacao, 1, 4) || '-' || SUBSTR(tb_locacao_nova.dataLocacao, 5, 2) || '-' || SUBSTR(tb_locacao_nova.dataLocacao, 7, 2)) as dataLocacao,
+tb_locacao_nova.horaLocacao,
+DATE(SUBSTR(tb_locacao_nova.dataEntrega, 1, 4) || '-' || SUBSTR(tb_locacao_nova.dataEntrega, 5, 2) || '-' || SUBSTR(tb_locacao_nova.dataEntrega, 7, 2)) as dataEntrega,
+tb_locacao_nova.horaEntrega,
+tb_locacao_nova.qtdDiaria,
+tb_locacao_nova.vlrDiaria
+from tb_locacao_nova 
+left join tb_cliente on tb_locacao_nova.idCliente = tb_cliente.idCliente 
+left join tb_vendedor on tb_locacao_nova.idVendedor = tb_vendedor.idVendedor 
+left join tb_carro on tb_locacao_nova.idCarro = tb_carro.idCarro;
 
 
-
-
-
+DROP table tb_locacao_nova;
