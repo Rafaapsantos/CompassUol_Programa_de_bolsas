@@ -2,12 +2,15 @@
 
 ## Etapa 1- Normalização dos dados
 Comecei o desafio baixando o arquivo da concessionária e importando-o para o DBeaver, usando o SQLite. Em seguida, executei o comando abaixo para visualizar todas as tabelas e verificar se havia algum dado incorreto. Essa análise inicial foi essencial para que eu pudesse iniciar o processo do desafio.
+
 ![evidencia1](../Evidencias/evidencia1.jpeg)
+
 Após analisar a tabela, identifiquei três colunas com dados inconsistentes. A primeira e a segunda era as colunas _dataLocacao_ e _dataEntrega_ onde as datas apareciam em um formato incomum, o que dificultava a leitura e organização. Decidi que, ao criar as tabelas, ajustaria essas datas para um formato mais adequado, garantindo consistência e padronização.
 
 A terceira coluna com problemas era _horaLocacao_. Notei que os horários estavam misturados em dois formatos: horários iguais ou superiores a 10:00 estavam no formato HH:MM, enquanto horários menores que 10:00 apareciam como H:MM, sem o zero à esquerda. Para manter a uniformidade, planejei ajustar todos os horários para o formato HH:MM, adicionando o zero à esquerda em horários antes das 10:00.
 
 Após identificar os dados inconsistentes, percebi que seria mais eficiente separar as tabelas para facilitar as consultas futuras. Por isso, organizei o nome de cada tabela e defini o conteúdo de cada uma, registrando tudo no Notion(imagem abaixo) para referência e organização.
+
 ![evidencia2](../Evidencias/evidencia2.jpeg)
 
 ##### Após concluir todas essas etapas, iniciei a criação da query. Agora, vou mostrar um pouco do que fiz.
@@ -34,9 +37,11 @@ Consegui, no entanto, formatar as datas nas colunas dataLocacao e dataEntrega, q
 Finalmente, removi a tabela temporária tb_locacao_nova, mantendo apenas a estrutura normalizada.
 
 Você pode ver o meu código no link abaixo: 
-[normalização_dos_dados]()
+
+[normalização_dos_dados](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%202/Desafios/normalizacao_dos_dados.sql)
 
 E esse é o desenho da modelagem relacional após a normalização 
+
 ![evidencia3](../Evidencias/evidencia3.jpeg)
 
 ### Etapa 2- Modelagem Dimensional
