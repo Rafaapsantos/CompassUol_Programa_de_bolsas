@@ -85,11 +85,13 @@ Finalmente, foram realizados **SELECTs** em cada tabela para verificar o conteú
 
 Você pode ver o meu código no link abaixo: 
 
-[modelagem_dimensional]()
+[modelagem_dimensional](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%202/Desafios/modelagem_dimensional.sql)
 
 E esse é o desenho da modelagem dimensional após a execução do código: 
 
 ![evidencia3](../Evidencias/evidencia4.png)
+
+
 
 **OBS:** 
 Para visualizar os diagramas da modelagem relacional e dimensional, basta clicar com o botão direito do mouse sobre **"Tabelas"** e selecionar a opção **"Ver diagrama"**. Isso abrirá uma página onde os dois diagramas criados serão exibidos. Para alterar a notação para Crow's Foot, clique com o botão direito em qualquer lugar dessa página e selecione **"Notation"**, em seguida escolha **"Crow's Foot"**.

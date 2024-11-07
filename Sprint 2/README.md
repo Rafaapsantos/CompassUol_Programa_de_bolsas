@@ -6,12 +6,13 @@ O desafio consiste em aplicar os métodos de SQL ensinados no curso, além dos c
 
 * [código_normalização_dos_dados](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%202/Desafios/normalizacao_dos_dados.sql)
 
-* [imagem_modelagem_relacional]()
+* [imagem_modelagem_relacional](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%202/Desafios/desenho_modelagem_relacioanal.png)
 
 ### Etapa 2- Modelagem Dimensional
-* [código_modelagem_dimensional]()
 
-* [imagem_modelagem_dimensional]()
+* [código_modelagem_dimensional](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%202/Desafios/modelagem_dimensional.sql)
+
+* [imagem_modelagem_dimensional](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%202/Desafios/desenho_modelagem_dimensional.png)
 
 ## Exercícios 
 ### Exercícios - Biblioteca 
