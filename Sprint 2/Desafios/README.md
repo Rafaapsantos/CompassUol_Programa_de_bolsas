@@ -42,12 +42,18 @@ Você pode ver o meu código no link abaixo:
 
 E esse é o desenho da modelagem relacional após a normalização 
 
-![evidencia3](../Evidencias/evidencia3.png)
+![evidencia3](../Evidencias/evidencia3.jpeg)
 
 ### Etapa 2- Modelagem Dimensional
 Iniciei a segunda etapa do projeto desenvolvendo o código para a modelagem dimensional. Conforme mencionado no vídeo e nas instruções do desafio, comecei utilizando _views_ para criar as tabelas de dimensões e a tabela fato. No entanto, após a execução, percebi que, ao visualizar o diagrama, as tabelas de dimensões não estavam conectadas à tabela fato. Pesquisando em fontes externas, descobri que _views_ não permitem a criação de restrições de chaves estrangeiras.
 
 Após discutir a questão com uma colega do meu squad, decidi não utilizar _views_ e, em vez disso, optei por criar _tables_.
+
+Como já havia implementado o código utilizando views, decidi incluir as imagens do código abaixo para referência:
+
+![evidencia5](../Evidencias/evidencia5.jpeg)
+
+![evidencia6](../Evidencias/evidencia6.jpeg)
 
 #### Agora, vou mostrar um pouco do que fiz.
 
@@ -89,7 +95,7 @@ Você pode ver o meu código no link abaixo:
 
 E esse é o desenho da modelagem dimensional após a execução do código: 
 
-![evidencia3](../Evidencias/evidencia4.png)
+![evidencia4](../Evidencias/evidencia4.png)
 
 Após a execução dos dois códigos, o link abaixo mostra como o arquivo ficará:
 
