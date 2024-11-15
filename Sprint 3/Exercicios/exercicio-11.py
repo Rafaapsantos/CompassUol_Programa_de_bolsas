@@ -1,3 +1,8 @@
-# Leia o arquivo person.json, faça o parsing e imprima seu conteúdo.
+import json 
 
-# Dica: leia a documentação do pacote json
+abre_arquivo = open('person.json')
+
+with abre_arquivo as arquivo:
+    le_arquivo = json.load(arquivo)
+
+print(le_arquivo)

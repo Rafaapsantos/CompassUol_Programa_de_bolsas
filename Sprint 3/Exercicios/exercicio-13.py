@@ -1,4 +1,5 @@
-# Escreva um programa que lê o conteúdo do arquivo texto arquivo_texto.txt e imprime o seu conteúdo.
+abre_arquivo = open('arquivo_texto.txt')
 
-# Dica: leia a documentação da função open(...)
+print(abre_arquivo.read(), end='')
 
+abre_arquivo.close()
