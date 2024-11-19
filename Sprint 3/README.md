@@ -1,5 +1,8 @@
 # Sprint 3
 ## Desafio
+O desafio consiste em aplicar os conhecimentos adquiridos no curso de Python, utilizando as bibliotecas __Pandas__ e __Matplotlib__, para realizar a leitura do arquivo fornecido, processar e tratar os dados, e, por fim, gerar gráficos que representem as informações de forma visual e intuitiva.
+
+[Desafio](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%203/Desafios)
 
 ## Exercícios 
 ### Exercícios - Python
@@ -30,13 +33,16 @@
 25. [Exercício 25](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%203/Exercicios/exercicio-25.py)
 
 ### Exercícios - ETL com Python 
+[Pasta exercicio ETL](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%203/Exercicios/exercicio_ETL)
 
 
 ## Certificado 
 [Certificado- AWS](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%203/Certificados)
 
 ## Opnião:
+Gostei bastante dessa sprint, pois ela me fez perceber novamente que, embora as linguagens de programação tenham suas particularidades, a lógica por trás delas é sempre muito semelhante, o que muda é a forma de implementar. Apesar de ter gostado da linguagem Python, confesso que prefiro outras linguagens, como o Dart. No entanto, trabalhar com as bibliotecas do Python tornou o processo de análise de dados extremamente simples e eficiente.
 
+Essa não foi minha primeira experiência com Python, já que tive um contato inicial com suas bibliotecas de análise em um trabalho para a disciplina de Estatística Aplicada na faculdade. Porém, a linguagem em si ainda era algo que eu conhecia pouco, e essa sprint foi uma ótima oportunidade para explorar mais seu potencial.
 
 ## O que aprendi?
 1. PYTHON
