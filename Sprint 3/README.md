@@ -2,7 +2,7 @@
 ## Desafio
 O desafio consiste em aplicar os conhecimentos adquiridos no curso de Python, utilizando as bibliotecas __Pandas__ e __Matplotlib__, para realizar a leitura do arquivo fornecido, processar e tratar os dados, e, por fim, gerar gráficos que representem as informações de forma visual e intuitiva.
 
-[Desafio](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%203/Desafios)
+[Desafio](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%203/Desafios/desafio.ipynb)
 
 ## Exercícios 
 ### Exercícios - Python
