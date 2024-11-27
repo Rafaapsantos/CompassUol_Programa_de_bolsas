@@ -32,7 +32,11 @@
 * Funções de imutabilidade
 * Generators
 
-2. AWS Skill Builder - AWS Partner: Accreditation 
+2. AWS Skill Builder - AWS Partner: Accreditation
+* Elementos técnicos essenciais da AWS
+* Introdução ao AWS Cloud Adoption Framework (AWS CAF)
+* Introdução às estratégias de migração
+* Introdução ao AWS Well-Architected Framework
 
 3. Estatística Descritiva 
 * População e Amostra
@@ -40,7 +44,6 @@
 * Medidas de tendência central - média, moda, mediana, medidas separatrizes e medidas de tendência central usando python
 * Medidas de dispersão - Amplitude total, amplitude interquatílica, desvio médio, variância e desvio padrão, coeficiente de variação e Medidas de dispersão usando python
 * Medidas de assimetria - Curtose e boxplot
-*
 
 4. Docker para desenvolvedores 
 
