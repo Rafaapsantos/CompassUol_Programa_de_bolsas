@@ -6,13 +6,13 @@
 
 ## Exercícios 
 ### Exercícios - Python
-1. [Exercício 1](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%203/Exercicios/exercicio-01.py)
-2. [Exercício 2](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%203/Exercicios/exercicio-02.py)
-3. [Exercício 3](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%203/Exercicios/exercicio-03.py)
-4. [Exercício 4](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%203/Exercicios/exercicio-04.py)
-5. [Exercício 5](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%203/Exercicios/exercicio-05.py)
-6. [Exercício 6](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%203/Exercicios/exercicio-06.py)
-7. [Exercício 7](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%203/Exercicios/exercicio-07.py)
+1. [Exercício 1](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%204/Exercicios/exercicio-01.py)
+2. [Exercício 2](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%204/Exercicios/exercicio-02.py)
+3. [Exercício 3](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%204/Exercicios/exercicio-03.py)
+4. [Exercício 4](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%204/Exercicios/exercicio-04.py)
+5. [Exercício 5](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%204/Exercicios/exercicio-05.py)
+6. [Exercício 6](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%204/Exercicios/exercicio-06.py)
+7. [Exercício 7](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/blob/main/Sprint%204/Exercicios/exercicio-07.py)
 
 
 ## Certificado 
