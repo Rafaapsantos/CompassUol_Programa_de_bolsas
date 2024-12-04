@@ -1,8 +1,8 @@
 # Sprint 4
 ## Desafio
+O desafio consiste em aplicar os conhecimentos adquiridos no curso de Python e no curso de Docker. Nesse desafio tive que construir imagens, executar o container, criação de um script em python e criação de container que permita o recebimento de inputs.
 
-
-[Desafio]()
+[Desafio](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%204/Desafios)
 
 ## Exercícios 
 ### Exercícios - Python
@@ -17,8 +17,12 @@
 
 ## Certificado 
 [Certificado- AWS]()
+[Certificado- AWS]()
 
 ## Opnião:
+Essa foi a primeira vez que não gostei tanto de uma sprint. Enfrentei bastante dificuldade ao trabalhar com Docker. Embora tenha entendido bem os comandos relacionados a containers e criação de imagens no Docker, e até feito algumas anotações para facilitar consultas futuras, tive bastante dificuldade com conceitos como volumes, Docker Compose, Docker Swarm e Kubernetes.
+
+Apesar dos desafios, consegui concluir e entregar o desafio conforme as especificações propostas.
 
 ## O que aprendi?
 1. PYTHON
@@ -46,4 +50,11 @@
 * Medidas de assimetria - Curtose e boxplot
 
 4. Docker para desenvolvedores 
-
+* Containers
+* Imagens
+* Volumes
+* Networks
+* YAML
+* Docker Compose
+* Docker Swarm
+* Kubernetes
