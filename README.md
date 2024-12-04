@@ -49,15 +49,15 @@ Sou uma pessoa resiliente, responsável e disciplinada, com forte foco em soft s
 * QuickSight
 
 # Sprints 
-1. [Sprint 1](../CompassUol_Programa_de_bolsas/Sprint%201/)
-2. [Sprint 2](../CompassUol_Programa_de_bolsas/Sprint%202/)
-3. [Sprint 3](../CompassUol_Programa_de_bolsas/Sprint%203/)
-4. [Sprint 4](../CompassUol_Programa_de_bolsas/Sprint%204/)
-5. [Sprint 5](../CompassUol_Programa_de_bolsas/Sprint%205/)
-6. [Sprint 6](../CompassUol_Programa_de_bolsas/Sprint%206/)
-7. [Sprint 7](../CompassUol_Programa_de_bolsas/Sprint%207/)
-8. [Sprint 8](../CompassUol_Programa_de_bolsas/Sprint%208/)
-9. [Sprint 9](../CompassUol_Programa_de_bolsas/Sprint%209/)
-10. [Sprint 10](#sprint-10)
+1. [Sprint 1](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%201)
+2. [Sprint 2](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%202)
+3. [Sprint 3](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%203)
+4. [Sprint 4](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%204)
+5. [Sprint 5](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%205)
+6. [Sprint 6](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%206)
+7. [Sprint 7](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%207)
+8. [Sprint 8](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%208)
+9. [Sprint 9](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%209)
+10. [Sprint 10](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%2010)
     
 

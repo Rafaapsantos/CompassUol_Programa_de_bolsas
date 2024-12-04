@@ -17,6 +17,7 @@ O desafio consiste em aplicar os conhecimentos adquiridos no curso de Python e n
 
 ## Certificado 
 [Certificado- AWS](../Sprint%204/Certificados/Certificado_AWS_Technical_Essentials.jpg)
+
 [Certificado- AWS](../Sprint%204/Certificados/Certificado_AWS_Partner_Accreditation.jpg)
 
 ## Opnião:
