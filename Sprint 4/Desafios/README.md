@@ -2,7 +2,7 @@
 
 Iniciei o desafio realizando o download do arquivo carguru.py. Após isso, o desafio foi dividido em etapas.
 
-### Primeira etapa:
+## __PRIMEIRA ETAPA__:
 O primeiro passo dessa etapa foi criar um arquivo chamado __Dockerfile__. Esse arquivo é responsável por definir a imagem base, copiar o arquivo carguru.py para o ambiente do container e configurá-lo para ser executado automaticamente assim que o container for iniciado.
 
 No arquivo Dockerfile, construí uma imagem configurada para executar o código presente no arquivo carguru.py.  Segue abaixo um print que mostra a imagem que eu criei:
@@ -46,17 +46,15 @@ Após criar o container, usei o comando abaixo:
 
 Esse comando lista todos os containers criados, incluindo os que estão em execução e os que já foram finalizados. Esse comando foi útil para verificar se o container da imagem desafio foi criado e executado corretamente.
 
-### segunda etapa:
+## __SEGUNDA ETAPA__:
 
 Na segunda etapa, o objetivo era responder à pergunta: __"É possível reutilizar containers? Em caso positivo, apresente o comando necessário para reiniciar um dos containers parados em seu ambiente Docker? Não sendo possível reutilizar, justifique sua resposta."__
 
-Segue abaixo o print com a minha resposta, bem como o link para o arquivo da resposta.
+Segue abaixo o print com a minha resposta.
 
 ![evidencia6](../Evidencias/evidencia6.jpeg)
 
-[link para o arquivo da resposta](../Desafios/etapa2/resposta_etapa_2.md)
-
-### terceira etapa:
+## __TERCEIRA ETAPA__:
 
 Iniciei a etapa 3 criando uma pasta chamada etapa 3. Dentro dessa pasta, adicionei dois arquivos: um chamado script.py e outro chamado Dockerfile.
 
@@ -88,26 +86,35 @@ Para executar os comandos Docker, cliquei com o botão direito do mouse sobre o 
 
 Para criar a imagem Docker, utilizei o seguinte comando:
 
-![evidencia9]()
+![evidencia9](../Evidencias/evidencia9.jpeg)
 
 * -t desafio: Define uma "tag" (nome) para a imagem criada. No caso, eu nomeei a imagem como mascarar-dados.
 * .: O ponto indica o caminho onde o arquivo Dockerfile está localizado.
 
 Após criar a imagem, usei o comando abaixo para verificar se a imagem foi criada corretamente:
 
-![evidencia10]()
+![evidencia10](../Evidencias/evidencia10.jpeg)
 
 Esse comando lista todas as imagens Docker disponíveis no meu sistema, permitindo confirmar que a imagem mascarar-dados foi criada com sucesso e está presente.
 
 Depois de confirmar que a imagem mascarar-dados foi criada com sucesso, utilizei o comando:
 
-![evidencia11]()
+![evidencia11](../Evidencias/evidencia11.jpeg)
 
 Esse comando cria e executa um container com base na imagem mascarar-dados.
 * -it: Permite uma interatividade com o container.
 
+Eu testei o script para garantir que estava funcionando corretamente. Durante o teste, segui os passos abaixo:
+
+1. Digitei o número 2 para entrar na funcionalidade de mascarar palavras.
+2. Em seguida, inseri as palavras __Rafaela__ (meu nome) e __prato__ para serem mascaradas.
+3. Finalizei o programa digitando o número 1 para sair.
+Tudo funcionou conforme o esperado, com as palavras sendo mascaradas corretamente e o programa encerrando sem erros.
+
 Após criar o container, usei o comando abaixo:
 
-![evidencia12]()
+![evidencia12](../Evidencias/evidencia12.jpeg)
 
 Esse comando lista todos os containers criados, incluindo os que estão em execução e os que já foram finalizados. Esse comando foi útil para verificar se o container da imagem desafio foi criado e executado corretamente.
+
+__OBSERVAÇÃO__: As pastas mostradas nos prints estão diferentes das pastas atuais porque reorganizei as etapas após concluir os desafios. Por isso, há essa divergência entre as imagens e a estrutura final.
