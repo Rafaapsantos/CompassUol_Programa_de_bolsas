@@ -10,6 +10,7 @@
 
 ## Certificado 
 [Certificado- AWS](../Sprint%205/Certificados/aws-cloud-quest-cloud-practitioner.png)
+[Link para o credly](https://www.credly.com/badges/16a0cf67-ffa7-4905-8efa-fc09a590a699/public_url)
 
 [Certificado- AWS]()
 
