@@ -1,22 +1,39 @@
 # Sprint 5
 ## Desafio
+O desafio consiste em aplicar os conhecimentos adquiridos nos cursos de AWS. Verificando a minha capacidade de manipular arquivos diretamente no S3. 
 
-
-[Desafio]()
+[Desafio](../Sprint%205/Desafios/)
 
 ## Exercícios 
-### Exercícios - Python
-1. [Exercício 1]()
+### Exercícios que está na pasta orientações na seção 1 da sprint
+Fui seguindo os passos que foram disponibilizados na Udemy para a realização do exercício, e abaixo deixo algumas imagens e vídeos mostrando que o exercício foi executado com sucesso.
+
+![Instance](../Sprint%205/Evidencias/evidencia5.jpeg)
+
+![Terminate instance](../Sprint%205/Evidencias/evidencia6.gif)
+
+### Exercícios - Laboratório AWS
+Fui seguindo os passos que foram disponibilizados na Udemy para a realização do exercício, e abaixo deixo algumas imagens e vídeos mostrando que o exercício foi executado com sucesso. Também incluí o link para você poder verificar os detalhes.
+
+![Bucket](../Sprint%205/Evidencias/evidencia1.jpeg)
+
+![Objects](../Sprint%205/Evidencias/evidencia2.jpeg)
+
+![Site](../Sprint%205/Evidencias/evidencia3.jpeg)
+
+![Vídeo Fazendo o download](../Sprint%205/Evidencias/evidencia4.gif)
+
+[Link para verificação do site](http://exercicio1sprint5.s3-website-us-east-1.amazonaws.com)
 
 ## Certificado 
 [Certificado- AWS](../Sprint%205/Certificados/aws-cloud-quest-cloud-practitioner.png)
 
 [Link para o credly](https://www.credly.com/badges/16a0cf67-ffa7-4905-8efa-fc09a590a699/public_url)
 
-[Certificado- AWS]()
+[Certificado- AWS](../Sprint%205/Certificados/Certificado_AWS_certified_cloud_practitioner.jpg)
 
 ## Opnião:
-
+Acho que até agora essa foi a sprint em que tive mais dificuldade. A parte do curso e do jogo eu consegui fazer sem problemas, mas o desafio foi bem complicado, especialmente a parte de usar a biblioteca boto3.
 
 ## O que aprendi?
 1. AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner
@@ -32,7 +49,6 @@
 * Aplicação de recuperação automática e com escalabilidade
 * Aplicativos web de alta disponibilidade
 * Economias na nuvem
-
 
 2. Curso-padrão de preparação para o exame: AWS Certified Cloud Practitioner (CLF-C02 - Português (Brasil))
 * Sobre o exame de certificação
