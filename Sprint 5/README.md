@@ -10,6 +10,8 @@ Fui seguindo os passos que foram disponibilizados na Udemy para a realização d
 
 ![Instance](../Sprint%205/Evidencias/evidencia5.jpeg)
 
+Vídeo: 
+
 ![Terminate instance](../Sprint%205/Evidencias/evidencia6.gif)
 
 ### Exercícios - Laboratório AWS
@@ -20,6 +22,8 @@ Fui seguindo os passos que foram disponibilizados na Udemy para a realização d
 ![Objects](../Sprint%205/Evidencias/evidencia2.jpeg)
 
 ![Site](../Sprint%205/Evidencias/evidencia3.jpeg)
+
+Vídeo:
 
 ![Vídeo Fazendo o download](../Sprint%205/Evidencias/evidencia4.gif)
 
