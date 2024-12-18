@@ -71,7 +71,8 @@ __Importante__: Para testar o script, é necessário adicionar as credenciais da
 
 [Link para o script que faz upload do dataset](../Desafios/script_boto.py)
 
-Depois, criei um arquivo chamado dataframe.py, que realiza todas as manipulações solicitadas nas orientações. As instruções pediam:
+Depois, criei um arquivo chamado dataframe.py, que carrega o arquivo armazenado no S3 e realiza todas as manipulações solicitadas nas orientações, utilizando a biblioteca pandas.
+ As instruções pediam:
 
 * Uma cláusula que filtra dados usando ao menos dois operadores lógicos.
 * Duas funções de agregação.
@@ -85,10 +86,12 @@ Antes de começar as manipulações, elaborei uma pergunta para orientar a anál
 __A pergunta é:__
 "Quais são as 5 maiores médias de vítimas por município no interior de MG, considerando apenas delitos consumados, durante o ano de 2023?"
 
-[link para o arquivo](../Desafios/dataframe.py)
+Esse arquivo realiza todas as transformações necessárias no dataset, imprime a resposta final da análise e salva o dataframe transformado localmente. Além disso, ele faz o upload do arquivo transformado para o S3.
 
-Esse arquivo realiza todas as transformações necessárias no dataset, imprime a resposta final da análise e salva as transformações em outro DataFrame.
+Aqui está um vídeo mostrando a execução do script, junto com o link para acessá-lo.
 
-__OBS:__ Eu criei esse script principalmente para me organizar melhor e garantir que tudo fosse executado da forma correta.
+__Importante__: Para testar o script, é necessário adicionar as credenciais da AWS. No entanto, elas foram removidas do arquivo por questões de segurança.
 
+[link para o arquivo](../Desafios/dataframe2.py)
 
+![evidencia12- gif ]()
