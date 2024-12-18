@@ -42,8 +42,34 @@ Após realizar esses ajustes, tudo funcionou corretamente como eu esperava.
 
 ![evidencia9](../Evidencias/evidencia9.jpeg)
 
+Primeiro, tentei cadastrar minhas credenciais da AWS utilizando o comando *aws configure*. No entanto, enfrentei problemas, e nenhuma tentativa funcionava. O erro que aparecia era:
 
-------------------------------------------------------------------------
+"An error occurred (InvalidAccessKeyId) when calling the ListBuckets operation: The AWS Access Key Id you provided does not exist in our records."
+
+Diante disso, decidi incluir as credenciais diretamente no script para prosseguir.
+
+Para testar se as credenciais estavam funcionando corretamente, criei um código simples com o objetivo de criar o bucket necessário para o desafio.
+
+Aqui está um vídeo mostrando a execução do script, junto com uma imagem do código e também o link para acessá-lo.
+__Importante__: Para testar o script, é necessário adicionar as credenciais da AWS. No entanto, elas foram removidas do arquivo por questões de segurança.
+
+![evidencia10](../Evidencias/evidencia10.jpeg)
+
+![evidencia11](../Evidencias/evidencia11.gif)
+
+[Link para o script que cria o bucket](../Desafios/criar_bucket.py)
+
+Em seguida, criei um script para fazer o upload do meu dataset para o bucket que criei, conforme solicitado nas instruções do desafio.
+
+Aqui está um vídeo mostrando a execução do script, junto com uma imagem do código e também o link para acessá-lo.
+
+__Importante__: Para testar o script, é necessário adicionar as credenciais da AWS. No entanto, elas foram removidas do arquivo por questões de segurança.
+
+![evidencia12](../Evidencias/evidencia12.jpeg)
+
+![evidencia13- gif](../Evidencias/)
+
+[Link para o script que faz upload do dataset](../Desafios/script_boto.py)
 
 Depois, criei um arquivo chamado dataframe.py, que realiza todas as manipulações solicitadas nas orientações. As instruções pediam:
 
@@ -63,5 +89,6 @@ __A pergunta é:__
 
 Esse arquivo realiza todas as transformações necessárias no dataset, imprime a resposta final da análise e salva as transformações em outro DataFrame.
 
+__OBS:__ Eu criei esse script principalmente para me organizar melhor e garantir que tudo fosse executado da forma correta.
 
 
