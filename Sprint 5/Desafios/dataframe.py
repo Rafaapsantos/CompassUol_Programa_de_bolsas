@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Carregar os dados tratados
-df = pd.read_csv('dados_tratados.csv', delimiter=';', encoding='utf-8')
+df = pd.read_csv('violencia_domestica_2023.csv', delimiter=';', encoding='utf-8')
 
 # 3.1. Cláusula que filtra dados usando ao menos dois operadores lógicos
 # Filtrar apenas os dados de "Interior de MG" e "CONSUMADO"
@@ -25,8 +25,7 @@ top_5_municipios = media_vitimas.sort_values(ascending=False).head(5)
 filtered_df['vitimas_grave'] = filtered_df['qtde_vitimas'].apply(lambda x: 'Grave' if x >= 5 else 'Leve')
 
 # 3.4. Função de conversão
-# Converter a coluna e Converter tentado_consumado para category e Converter a coluna "data_fato" para datetime
-filtered_df['tentado_consumado'] = filtered_df['tentado_consumado'].astype('category')
+# Converter a coluna "data_fato" para datetime
 filtered_df['data_fato'] = filtered_df['data_fato'].astype('datetime64[ns]')
 
 # 3.5. Função de data
