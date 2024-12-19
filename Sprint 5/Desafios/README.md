@@ -67,7 +67,7 @@ __Importante__: Para testar o script, é necessário adicionar as credenciais da
 
 ![evidencia12](../Evidencias/evidencia12.jpeg)
 
-![evidencia13- gif](../Evidencias/)
+![evidencia13](../Evidencias/evidencia13.gif)
 
 [Link para o script que faz upload do dataset](../Desafios/script_boto.py)
 
@@ -88,12 +88,14 @@ __A pergunta é:__
 
 Esse arquivo realiza todas as transformações necessárias no dataset, imprime a resposta final da análise e salva o dataframe transformado localmente. Além disso, ele faz o upload do arquivo transformado para o S3.
 
-Aqui está um vídeo mostrando a execução do script, junto com o link para acessá-lo.
+Aqui está um vídeo mostrando a execução do script, junto com o link para acessá-lo e uma imagem da resposta para a minha pergunta.
 
 __Importante__: Para testar o script, é necessário adicionar as credenciais da AWS. No entanto, elas foram removidas do arquivo por questões de segurança.
 
 [link para o arquivo](../Desafios/dataframe2.py)
 
-![evidencia12- gif ]()
+![evidencia14- gif](../Evidencias/evidencia14.gif)
+
+![evidencia15](../Evidencias/evidencia15.png)
 
 A análise das 5 maiores médias de vítimas por município no interior de MG, considerando delitos consumados em 2023, pode identificar regiões com alta incidência de crimes. Isso permite direcionar recursos de segurança pública, propor políticas preventivas, como reforço no policiamento e ações sociais, e engajar a comunidade em iniciativas de redução da violência. 
