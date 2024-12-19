@@ -95,3 +95,5 @@ __Importante__: Para testar o script, é necessário adicionar as credenciais da
 [link para o arquivo](../Desafios/dataframe2.py)
 
 ![evidencia12- gif ]()
+
+A análise das 5 maiores médias de vítimas por município no interior de MG, considerando delitos consumados em 2023, pode identificar regiões com alta incidência de crimes. Isso permite direcionar recursos de segurança pública, propor políticas preventivas, como reforço no policiamento e ações sociais, e engajar a comunidade em iniciativas de redução da violência. 

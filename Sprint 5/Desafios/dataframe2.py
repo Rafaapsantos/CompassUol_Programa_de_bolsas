@@ -3,9 +3,9 @@ import pandas as pd
 import os
 
 # Configura as credenciais da AWS
-aws_access_key_id = 'aws_access_key_id'
-aws_secret_access_key = 'aws_secret_access_key'
-aws_session_token = 'aws_session_token'
+aws_access_key_id = 'ASIAWQUOZ35I42LXAM2V'
+aws_secret_access_key = 'C5fnsI+CkJrCbELI4GdGwI+/GCWZLG6c6ioAP7LS'
+aws_session_token = 'IQoJb3JpZ2luX2VjEKL//////////wEaCXVzLWVhc3QtMSJHMEUCIQCY1IQ7Oq8EwwUaWaqFVBqFhl13FB7LyihVqbCiyPUiQgIgfBTUQ3gCaDzEgomRfe7dvhjvfcm1COybpkFGiAoLbWkqoQMIahAAGgw0NDgwNDk4MzE3NjEiDAF6YvonNnSG1ylvUCr+AiiDDL6sO+ZHUchdR4pNLVz+K/VdcR8eAGF5Y/Tsk7fl8Y4PvgJmgXTLcbut15kc/xAio6LJjMMsgPkrYyYn6wkChnxdh1B+95oOppcGQfEHouxkmci5ti/dd0tNAZngaLrmUNHKCiLa8G3F0XF4TyRM/KZZxerUFyW6YalsA5GfAM6opi3Hu+o6Zg5Kw8OzMPibSySwroB31dtM8iXos9UsMLTBF0EVu8D6eCX7BvOk9kZEboU/SuocCZ4yfkjhNPgQFHHU2EPEMx16Nx+XMWpxy8Yg6MVhdtxa3fkhHM0CRBx9G0wbbFjSD6jPyWeZ0zHp23CZJ8LIdSNgoiGdc2tdmr1h1JZe0B7n4iTkID2mOvIzvtnDjV3Z28ftiz/knR8BZTLv0605HxK9VA2weNOE6dF8pXAkRRBvm45958gzVuDTKDhgvkDvD4VE/Kl/2lBSkdjcB6GBVlyDN9E4jivN3l/kY66djD/hKgqGdAE/h5l+NG85XgUNE7pjNq4wi+aNuwY6pgE+73vku93M7Woskcy8WEWV8LjnBN0A1qQ/T3SrVmXLYvvbtstNQ88Mb8DcQO/O252QvRoGZ2eKdgHKSn9tZlYkqY8p+yOL8Z6xynCtaJgY0x4R539SchzwJkHp+qc7NW1iJDKSq0IoJrFDRi4lOSt/RPa/6PQ4wIA8X3sNdQSMHs1Px2aPQ9Vcqk9L/RTPuwiFaJb0bcVH+3MrAJq15UbR+viWCHpR'
 
 nome_bucket = 'rafaela-santos-desafiosprint5'   # Varíavel com o nome do meu bucket, para ficar mais facil
 nome_dataset_s3 = os.path.basename('violencia_domestica_2023.csv')  # Varíavel com o nome do objeto no S3
@@ -51,7 +51,7 @@ try:
 
     # 3.4. Função de conversão
     # Converter a coluna "data_fato" para datetime
-    filtered_df['data_fato'] = pd.to_datetime(filtered_df['data_fato'])
+    filtered_df['data_fato'] = pd.to_datetime(filtered_df['data_fato'], dayfirst=True)
 
     # 3.5. Função de data
     #Crie uma nova coluna indicando True se o fato ocorreu em algum dia da semana e False para dias da semana:
@@ -64,10 +64,10 @@ try:
     print(f"As 5 maiores quantidades médias de vítimas por município no interior de MG (2023, delitos consumados):\n {top_5_municipios} ")
 
     # Salva o DataFrame localmente
-    filtered_df.to_csv(nome_dataset_s3, index=False, sep=';', encoding='utf-8')
+    filtered_df.to_csv(nome_dataset_transformado, index=False, sep=';', encoding='utf-8')
 
     # Carrega o arquivo local para o S3
-    s3_client.upload_file('dados_transformados.csv', nome_bucket, nome_dataset_transformado)
+    s3_client.upload_file(nome_dataset_transformado, nome_bucket, nome_dataset_transformado)
     print(f"O arquivo transformado com o nome -> {nome_dataset_transformado} foi salvo no bucket {nome_bucket}")
 
 except Exception as e:
