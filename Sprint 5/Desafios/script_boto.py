@@ -7,7 +7,7 @@ aws_secret_access_key = 'aws_secret_access_key'
 aws_session_token = 'aws_session_token'
 
 nome_bucket = 'rafaela-santos-desafiosprint5'   # Varíavel com o nome do meu bucket, para ficar mais facil
-nome_dataset = 'violencia_domestica_2023.csv'   # Varíavel com o nome do meu dataset, para ficar mais facil
+nome_dataset = 'violencia_domestica_2023.csv'   # Varíavel com o nome do meu dataset
 nome_object = os.path.basename(nome_dataset)    #  Varíavel que extrai o nome do dataset para usar no S3
 
 # Cria um cliente S3 usando as minhas credenciais
