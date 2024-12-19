@@ -37,7 +37,7 @@ Vídeo:
 [Certificado- AWS](../Sprint%205/Certificados/Certificado_AWS_certified_cloud_practitioner.jpg)
 
 ## Opnião:
-Acho que até agora essa foi a sprint em que tive mais dificuldade. A parte do curso e do jogo eu consegui fazer sem problemas, mas o desafio foi bem complicado, especialmente a parte de usar a biblioteca boto3.
+Acho que até agora essa foi a sprint em que tive mais dificuldade. A parte do curso e do jogo eu consegui fazer sem problemas, mas o desafio foi bem complicado, especialmente a parte de usar a biblioteca boto3, mas no final consegui entregar o desafio.
 
 ## O que aprendi?
 1. AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner
