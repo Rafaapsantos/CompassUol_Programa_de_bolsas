@@ -20,9 +20,9 @@
 
 [Certificado- AWS Skill Builder - Amazon EMR Getting Started]()
 
-[Certificado- AWS Skill Builder - Amazon QuickSight - Getting Started]()
+[Certificado- AWS Skill Builder - Amazon QuickSight - Getting Started](../Sprint%206/Certificados/Certificado_AWS_Amazon_QuickSight.jpg)
 
-[Certificado- AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift]()
+[Certificado- AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift](../Sprint%206/Certificados/Certificado_AWS_Data_Warehousing_Amazon_Redshift.jpg)
 
 [Certificado- AWS Skill Builder - AWS Glue Getting Started](../Sprint%206/Certificados/Certificado_AWS_Glue.jpg)
 
@@ -81,10 +81,23 @@
 7. 
 
 
-8. 
+8. Best Practices for Data Warehousing with Amazon Redshift
+* Implementação de um data warehouse usando o Amazon Redshift
+* Design básico de tabelas
+* Armazenamento de dados
+* Técnicas de ingestão de dados 
+* Gerenciamento de workload
+* Efeito do dimensionamento de nó e de cluster
 
 
-9. 
+9. Amazon QuickSight - Getting Started
+* Introdução ao QuickSight
+* Arquitetura e Casos de Uso
+* Como criar um conjunto de dados do QuickSight?
+* Como criar uma análise QuickSight?
+* Como personalizar o QuickSight usando temas?
+* Como publicar um painel do QuickSight?
+* Como usar o QuickSight Q para fazer perguntas em linguagem natural?
 
 
 
