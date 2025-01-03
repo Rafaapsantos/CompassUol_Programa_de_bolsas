@@ -8,41 +8,42 @@
 
 Primeiro, verifiquei se o arquivo nomes.csv estava presente no meu bucket.
 
-![evidencia1](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia1.png)
+![evidencia1](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia1.png)
 
 Em seguida, analisei o arquivo para entender melhor os dados contidos nele.
 
 Depois disso, criei uma pasta chamada queries dentro do bucket.
 
-![evidencia2](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia2.png)
+![evidencia2](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia2.png)
 
 Em seguida, configurei o local onde os resultados das consultas seriam armazenados.
 
-![evidencia3](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia3.jpeg)
+![evidencia3](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia3.jpeg)
 
 Depois, escrevi e executei o comando para criar o meu banco de dados.
 
-![evidencia4](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia4.png)
+![evidencia4](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia4.png)
 
 Por fim, na lista Database, selecionei o banco de dados recém-criado para defini-lo como meu banco de dados atual.
 
-![evidencia5](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia5.png)
+![evidencia5](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia5.png)
 
 Em seguida, elaborei a query para criar a tabela no meu banco de dados e a executei.
 
-![evidencia6](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia6.jpeg)
+![evidencia6](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia6.jpeg)
 
-![evidencia7](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia7.png)
+![evidencia7](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia7.png)
 
 Depois, testei os dados utilizando uma consulta específica.
-![evidencia8](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia8.png)
+![evidencia8](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia8.png)
 
 Essa é a resposta:
-![evidencia9](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia9.png)
+
+![evidencia9](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia9.png)
 
 Por fim, criei uma query que lista os 3 nomes mais usados em cada década, desde 1950 até os dias atuais. O resultado dessa consulta está armazenado na pasta exercicios, e localizei a resposta acessando a pasta queries do meu bucket.
 
-![evidencia10](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia10.jpeg)
+![evidencia10](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia10.jpeg)
 
 A resposta é essa:
 
@@ -53,11 +54,11 @@ A resposta é essa:
 
 Primeiro, criei uma função no AWS Lambda.
 
-![evidencia11](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia11.png)
+![evidencia11](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia11.png)
 
 Em seguida, substituí o código no arquivo lambda_function.py e cliquei em Deploy.
 
-![evidencia12](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia12.png)
+![evidencia12](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia12.png)
 
 Realizei o teste conforme solicitado e, de fato, ocorreu um erro.
 
@@ -69,11 +70,11 @@ Criei o arquivo Dockerfile conforme solicitado e executei todos os comandos indi
 
 Em seguida, realizei o upload do arquivo minha-camada-pandas.zip para dentro do bucket.
 
-![evidencia13](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia13.png)
+![evidencia13](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia13.png)
 
 Em seguida, criei a camada conforme solicitado. Depois, adicionei a camada e, por fim, realizei novos testes e o exercício foi concluído com sucesso.
 
-![evidencia14](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia14.png)
+![evidencia14](../Sprint%206/Evidencias/Evidencia_Exercicios/evidencia14.png)
 
 ##
 

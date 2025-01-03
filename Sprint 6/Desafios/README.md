@@ -19,12 +19,13 @@ Aqui está uma imagem do bucket na AWS, junto com o link para acessá-lo.
 
 __Importante__: Para testar o script, é necessário adicionar as credenciais da AWS. No entanto, elas foram removidas do arquivo por questões de segurança.
 
-![evidencia10](../Evidencias/Evidencias_desafio/evidencia13.png)
+![evidencia13](../Evidencias/Evidencia_desafio/evidencia13.png)
 
 [Link para o script que cria o bucket](../Desafios/criar_bucket.py)
 
-Em seguida, criei o arquivo enviar_arquivos.py para enviar os arquivos [movies.csv](../Desafios/dados/movies.csv) e [series.csv](../Desafios/dados/series.csv) para o bucket que foi criado anteriormente. 
+Em seguida, criei o arquivo enviar_arquivos.py para enviar os arquivos movies.csv e series.csv para o bucket que foi criado anteriormente. 
 Segue o link para o arquivo:
+
 [enviar_arquivos.py](../Desafios/enviar_arquivos.py)
 
 Depois disso, criei o arquivo Dockerfile e o arquivo docker-compose.yml. O docker-compose.yml é um arquivo de configuração que permite definir e gerenciar vários contêineres Docker de forma organizada, especificando suas imagens, volumes, redes e outras dependências em um único local.
@@ -39,23 +40,23 @@ Para executar os comandos Docker, cliquei com o botão direito do mouse sobre o 
 
 Para criar a imagem Docker, utilizei o seguinte comando:
 
-![evidencia14](../Evidencias/Evidencias_desafio/evidencia14.gif)
+![evidencia14](../Evidencias/Evidencia_desafio/evidencia14.gif)
 
 Após criar a imagem, usei o comando abaixo para verificar se a imagem foi criada corretamente:
 
-![evidencia16](../Evidencias/Evidencias_desafio/evidencia16.gif)
+![evidencia16](../Evidencias/Evidencia_desafio/evidencia16.gif)
 
 Esse comando lista todas as imagens Docker disponíveis no meu sistema, permitindo confirmar que a imagem imagem-desafio6 foi criada com sucesso e está presente.
 
 Depois de confirmar que a imagem desafio foi criada com sucesso, utilizei o comando:
 
-![evidencia15](../Evidencias/Evidencias_desafio/evidencia15.gif)
+![evidencia15](../Evidencias/Evidencia_desafio/evidencia15.gif)
 
 Esse comando cria e executa um container com base na imagem imagem-desafio6.
 
 Após executar o contêiner, acessei meu bucket para verificar se tudo estava correto.
 
-![evidencia17](../Evidencias/Evidencias_desafio/evidencia17.gif)
+![evidencia17](../Evidencias/Evidencia_desafio/evidencia17.gif)
 
 
 
