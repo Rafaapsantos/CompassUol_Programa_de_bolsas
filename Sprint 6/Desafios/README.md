@@ -23,7 +23,7 @@ __Importante__: Para testar o script, é necessário adicionar as credenciais da
 
 [Link para o script que cria o bucket](../Desafios/criar_bucket.py)
 
-Em seguida, criei o arquivo enviar_arquivos.py para enviar os arquivos movies.csv e series.csv para o bucket que foi criado anteriormente. 
+Em seguida, criei o arquivo enviar_arquivos.py para enviar os arquivos [movies.csv](../Desafios/dados/movies.csv) e [series.csv](../Desafios/dados/series.csv) para o bucket que foi criado anteriormente. 
 Segue o link para o arquivo:
 
 [enviar_arquivos.py](../Desafios/enviar_arquivos.py)
@@ -59,5 +59,6 @@ Após executar o contêiner, acessei meu bucket para verificar se tudo estava co
 ![evidencia17](../Evidencias/Evidencia_desafio/evidencia17.gif)
 
 
+__OBS__: Como os arquivos eram muito grandes, não estava conseguindo enviá-los para o GitHub. Então, pesquisei e consegui fazer o upload utilizando o Git LFS. Abaixo, adicionei um print dos comandos que utilizei.
 
-
+![evidencia18](../Evidencias/Evidencia_desafio/evidencia18.png)
