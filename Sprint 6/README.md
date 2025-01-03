@@ -85,9 +85,9 @@ Em seguida, criei a camada conforme solicitado. Depois, adicionei a camada e, po
 
 [Certificado- Getting Started with Amazon Redshift](../Sprint%206/Certificados/Certificado_AWS_Amazon_Redshift.jpg)
 
-[Certificado- AWS Skill Builder - Fundamentals of Analytics on AWS – Part 1]()
+[Certificado- AWS Skill Builder - Fundamentals of Analytics on AWS – Part 1](../Sprint%206/Certificados/Certificado_AWS_Fundamentals_Analytics_1.jpg)
 
-[Certificado- AWS Skill Builder - Fundamentals of Analytics on AWS – Part 2]()
+[Certificado- AWS Skill Builder - Fundamentals of Analytics on AWS – Part 2](../Sprint%206/Certificados/Certificado_AWS_Fundamentals_Analytics_2.jpg)
 
 [Certificado- AWS Skill Builder - Amazon EMR Getting Started](../Sprint%206/Certificados/Certificado_AWS_Amazon_EMR.jpg)
 
@@ -112,7 +112,12 @@ Em seguida, criei a camada conforme solicitado. Depois, adicionei a camada e, po
 * Produtos da Amazon Web Services (AWS) para desafios com analytics
 
 2. Fundamentals of Analytics on AWS – Part 2
-
+* Introdução aos data lakes 
+* Introdução ao data warehousing 
+* Introdução à arquitetura de dados moderna 
+* Serviços da AWS para arquitetura de dados moderna 
+* Casos de uso comuns 
+* Arquiteturas de referência 
 
 3. Serverless Analytics
 * Como sintetizar diferentes dados usando o poder de ferramentas como AWS IoT Analytics, Amazon Cognito, AWS Lambda e Amazon SageMaker, entre outras.
