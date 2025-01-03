@@ -1,5 +1,6 @@
 # Sprint 6
 ## Desafio
+Esse desafio consistia em elaborar perguntas para realizar a análise ao longo das próximas sprints e também em fazer o upload dos arquivos movies e series para o bucket criado na AWS.
 
 [Desafio](../Sprint%206/Desafios/)
 
@@ -98,6 +99,7 @@ Em seguida, criei a camada conforme solicitado. Depois, adicionei a camada e, po
 [Certificado- AWS Skill Builder - AWS Glue Getting Started](../Sprint%206/Certificados/Certificado_AWS_Glue.jpg)
 
 ## Opnião:
+O que mais gostei nesta sprint foram os exercícios, que achei bem interessantes, pois proporcionam um ótimo aprendizado. Sobre o desafio, achei bem tranquilo e não tive dificuldades em executá-lo. A única coisa que não gostei muito foi a quantidade de cursos que precisava assistir. 
 
 ## O que aprendi?
 1. Fundamentals of Analytics on AWS – Part 1

@@ -4,5 +4,5 @@ services:
     image: imagem-desafio6
     build: .
     volumes:
-      - ./app:/data
+      - ./app:/dados
       
