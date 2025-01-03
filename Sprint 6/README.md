@@ -3,9 +3,79 @@
 
 [Desafio](../Sprint%206/Desafios/)
 
-## Exercícios 
-### Exercícios - Python
-1. [Exercício 1]()
+# Exercícios 
+### Exercício - LAB AWS Athena 
+
+Primeiro, verifiquei se o arquivo nomes.csv estava presente no meu bucket.
+
+![evidencia1](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia1.png)
+
+Em seguida, analisei o arquivo para entender melhor os dados contidos nele.
+
+Depois disso, criei uma pasta chamada queries dentro do bucket.
+
+![evidencia2](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia2.png)
+
+Em seguida, configurei o local onde os resultados das consultas seriam armazenados.
+
+![evidencia3](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia3.jpeg)
+
+Depois, escrevi e executei o comando para criar o meu banco de dados.
+
+![evidencia4](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia4.png)
+
+Por fim, na lista Database, selecionei o banco de dados recém-criado para defini-lo como meu banco de dados atual.
+
+![evidencia5](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia5.png)
+
+Em seguida, elaborei a query para criar a tabela no meu banco de dados e a executei.
+
+![evidencia6](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia6.jpeg)
+
+![evidencia7](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia7.png)
+
+Depois, testei os dados utilizando uma consulta específica.
+![evidencia8](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia8.png)
+
+Essa é a resposta:
+![evidencia9](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia9.png)
+
+Por fim, criei uma query que lista os 3 nomes mais usados em cada década, desde 1950 até os dias atuais. O resultado dessa consulta está armazenado na pasta exercicios, e localizei a resposta acessando a pasta queries do meu bucket.
+
+![evidencia10](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia10.jpeg)
+
+A resposta é essa:
+
+[Resposta](../Sprint%206/Exercicios/Athena/3_nomes_mais_usado_decada.csv)
+
+##
+### Exercício - LAB AWS Lambda
+
+Primeiro, criei uma função no AWS Lambda.
+
+![evidencia11](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia11.png)
+
+Em seguida, substituí o código no arquivo lambda_function.py e cliquei em Deploy.
+
+![evidencia12](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia12.png)
+
+Realizei o teste conforme solicitado e, de fato, ocorreu um erro.
+
+Criei o arquivo Dockerfile conforme solicitado e executei todos os comandos indicados. Ao final, obtive dois arquivos: Dockerfile e minha-camada-pandas.zip. 
+
+[Dockerfile](../Sprint%206/Exercicios/Lambda/Dockerfile)
+
+[minha-camada-pandas.zip](../Sprint%206/Exercicios/Lambda/minha-camada-pandas.zip)
+
+Em seguida, realizei o upload do arquivo minha-camada-pandas.zip para dentro do bucket.
+
+![evidencia13](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia13.png)
+
+Em seguida, criei a camada conforme solicitado. Depois, adicionei a camada e, por fim, realizei novos testes e o exercício foi concluído com sucesso.
+
+![evidencia14](../Sprint%206/Evidencias/Evidencias_Exercicios/evidencia14.png)
+
+##
 
 ## Certificado 
 [Certificado- AWS Skill Builder - Serverless Analytics](../Sprint%206/Certificados/Certificado_AWS_Serverless_Analytics.jpg)
@@ -26,8 +96,6 @@
 
 [Certificado- AWS Skill Builder - AWS Glue Getting Started](../Sprint%206/Certificados/Certificado_AWS_Glue.jpg)
 
-
-
 ## Opnião:
 
 ## O que aprendi?
@@ -42,7 +110,7 @@
 * Relatórios e business intelligence, e os desafios de valor
 * Produtos da Amazon Web Services (AWS) para desafios com analytics
 
-2. 
+2. Fundamentals of Analytics on AWS – Part 2
 
 
 3. Serverless Analytics
@@ -68,7 +136,7 @@
 * Quais são os conceitos técnicos básicos que devo saber sobre o AWS Glue DataBrew?
 * Como faço o perfil dos meus dados, detecto PII e transformo meus dados usando o AWS Glue DataBrew?
 
-6. 
+6. Amazon EMR Getting Started
 * Introdução ao Amazon EMR
 * Arquitetura e casos de uso sem servidor do Amazon EMR
 * Arquitetura e casos de uso do cluster Amazon EMR

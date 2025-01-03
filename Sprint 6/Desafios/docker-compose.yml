@@ -1,0 +1,8 @@
+version: '3'
+services:
+  uploader:
+    image: imagem-desafio6
+    build: .
+    volumes:
+      - ./app:/data
+      
