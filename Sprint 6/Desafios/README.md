@@ -57,8 +57,3 @@ Esse comando cria e executa um container com base na imagem imagem-desafio6.
 Após executar o contêiner, acessei meu bucket para verificar se tudo estava correto.
 
 ![evidencia17](../Evidencias/Evidencia_desafio/evidencia17.gif)
-
-
-__OBS__: Como os arquivos eram muito grandes, não estava conseguindo enviá-los para o GitHub. Então, pesquisei e consegui fazer o upload utilizando o Git LFS. Abaixo, adicionei um print dos comandos que utilizei.
-
-![evidencia18](../Evidencias/Evidencia_desafio/evidencia18.png)
