@@ -1,2 +1,0 @@
-movies.csv filter=lfs diff=lfs merge=lfs -text
-series.csv filter=lfs diff=lfs merge=lfs -text
