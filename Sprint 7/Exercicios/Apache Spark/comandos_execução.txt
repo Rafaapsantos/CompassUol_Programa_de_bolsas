@@ -1,0 +1,5 @@
+linhas = sc.textFile("/home/jovyan/README.md")
+palavras = linhas.flatMap(lambda linha: linha.split(" "))
+count_palavras = palavras.map(lambda palavra: (palavra, 1))
+total_palavras = count_palavras.reduceByKey(lambda a, b: a + b)
+total_palavras.collect()

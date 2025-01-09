@@ -59,7 +59,36 @@ python script.py.
 
 ##
 ### Exercício - Apache Spark - Contador de Palavras
+Primeiro, executei o comando abaixo para baixar a imagem do Docker:
+![evidencia13](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia13.png)
 
+Depois, rodei este comando para criar e inicializar o contêiner no modo interativo, com mapeamento da porta 8888, para acessar o JupyterLab e testar antes:
+
+![evidencia14](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia14.png)
+
+Em seguida, testei o código no Jupyter e funcionou certinho. Então, executei o comando abaixo para verificar o ID do contêiner:
+
+![evidencia15](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia15.png)
+
+OBS: Todos os comandos acima foram executados diretamente no terminal do VS Code.
+
+Depois disso, abri um terminal no WSL e executei o comando abaixo para acessar o terminal interativo do Spark:
+
+![evidencia16](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia16.png)
+
+Em seguida, rodei os comandos abaixo para contar a quantidade de palavras no arquivo README.md (usei o README de apresentação, que foi o primeiro que fizemos):
+
+![evidencia17](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia17.png)
+
+Esses são os comandos utilizados:
+[comandos_execução](../Sprint%207/Exercicios/Apache%20Spark/comandos_execução.txt)
+
+E este foi o resultado: 
+![evidencia18](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia18.png)
+
+Também disponibilizei um arquivo .txt contendo a resposta:
+
+[resposta](../Sprint%207/Exercicios/Apache%20Spark/resultado.txt)
 
 ## Opnião:
 Gostei da sprint, mas tive algumas dificuldades com o Spark, principalmente na parte de instalação. O exercício do Glue também me demandou bastante tempo, pois eu estava cometendo algum erro que fazia com que sempre desse 'failed' ao rodar. No entanto, perguntei aos colegas e consegui resolver.
