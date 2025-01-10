@@ -1,73 +1,57 @@
 import sys
-from awsglue.transforms import *
-from awsglue.utils import getResolvedOptions
-from pyspark.context import SparkContext
 from awsglue.context import GlueContext
+from pyspark.context import SparkContext
+from pyspark.sql import functions as F
 from awsglue.job import Job
-from pyspark.sql.functions import col, count, upper, desc, max
+from awsglue.utils import getResolvedOptions
 
-## @params: [JOB_NAME, S3_INPUT_PATH, S3_TARGET_PATH]
-args = getResolvedOptions(sys.argv, ['JOB_NAME', 'S3_INPUT_PATH', 'S3_TARGET_PATH'])
+## @params: [JOB_NAME]
+args = getResolvedOptions(sys.argv, ['S3_INPUT_PATH', 'S3_TARGET_PATH'])
+
+source_file = args['S3_INPUT_PATH']  
+target_path = args['S3_TARGET_PATH']  
 
 sc = SparkContext()
 glueContext = GlueContext(sc)
 spark = glueContext.spark_session
-job = Job(glueContext)
-job.init(args['JOB_NAME'], args)
 
 # Leitura do arquivo CSV no S3
-dynamic_frame = glueContext.create_dynamic_frame.from_options(
-    connection_type="s3",
-    connection_options={"paths": [args['S3_INPUT_PATH']]},
-    format="csv",
-    format_options={"withHeader": True, "separator": ","}
-)
+df = spark.read.option("header", "true").csv(source_file)
 
-# Conversão para DataFrame
-df = dynamic_frame.toDF()
-
-# Imprime o schema
+# Mostra o schema do dataframe
 df.printSchema()
 
-# Transformar os valores da coluna 'nome' para MAIÚSCULO
-df = df.withColumn("nome", upper(col("nome")))
+# Altera a caixa dos valores da coluna nome para maiúsculo
+df_upper = df.withColumn("nome", F.upper(df["nome"]))
 
-# Contagem de linhas no DataFrame
-num_rows = df.count()
-print(f"Total de linhas: {num_rows}")
+# Imprimi a contagem de linhas do dataframe
+print(f"Contagem de linhas: {df_upper.count()}")
 
-# Agrupando por ano e sexo, contando nomes
-grouped_df = df.groupBy("ano", "sexo").agg(count("*").alias("count_names")).orderBy(col("ano").desc())
-grouped_df.show()
+# Contagem de nomes agrupados pelas colunas ano e sexo, ordenados por ano de forma decrescente
+contagem_agrupada = df_upper.groupBy("ano", "sexo").count().orderBy("ano", ascending=False)
+contagem_agrupada.show()
 
-# Nome feminino mais frequente
-female_df = df.filter(col("sexo") == "F").groupBy("nome").agg(count("*").alias("count"))
-popular_female = female_df.orderBy(desc("count")).first()
-if popular_female:
-    female_name = popular_female["nome"]
-    female_count = popular_female["count"]
-    female_year = df.filter((col("nome") == female_name) & (col("sexo") == "F")) \
-                    .groupBy("ano").agg(count("*").alias("count")) \
-                    .orderBy(desc("count")).first()["ano"]
-    print(f"O nome feminino mais popular foi '{female_name}' com {female_count} registros no ano {female_year}.")
+# Nome feminino com mais registros e o ano 
+nome_feminino_mais_registros = df_upper.filter(df_upper["sexo"] == "F") \
+    .groupBy("nome", "ano").agg(F.sum("total").alias("total_registros")) \
+    .orderBy(F.desc("total_registros")) \
+    .limit(1)
 
-# Nome masculino mais frequente
-male_df = df.filter(col("sexo") == "M").groupBy("nome").agg(count("*").alias("count"))
-popular_male = male_df.orderBy(desc("count")).first()
-if popular_male:
-    male_name = popular_male["nome"]
-    male_count = popular_male["count"]
-    male_year = df.filter((col("nome") == male_name) & (col("sexo") == "M")) \
-                  .groupBy("ano").agg(count("*").alias("count")) \
-                  .orderBy(desc("count")).first()["ano"]
-    print(f"O nome masculino mais popular foi '{male_name}' com {male_count} registros no ano {male_year}.")
+nome_feminino_mais_registros.show()
 
-# Total de registros por ano (10 primeiros ordenados por ano crescente)
-total_registros_por_ano = df.groupBy("ano").agg(count("*").alias("total_registros")).orderBy("ano").limit(10)
-total_registros_por_ano.show()
+# Nome masculino com mais registros e o ano 
+nome_masculino_mais_registros = df_upper.filter(df_upper["sexo"] == "M") \
+    .groupBy("nome", "ano").agg(F.sum("total").alias("total_registros")) \
+    .orderBy(F.desc("total_registros")) \
+    .limit(1)
 
-# Gravação do DataFrame no S3 com particionamento por sexo e ano
-target_path = args['S3_TARGET_PATH'] + "/frequencia_registro_nomes_eua"
-df.write.partitionBy("sexo", "ano").mode("overwrite").json(target_path)
+nome_masculino_mais_registros.show()
 
-job.commit()
+# Conta o total de registros por ano, para as primeiras 10 linhas ordenadas pelo ano
+contagem_por_ano = df_upper.groupBy("ano").agg(F.sum("total").alias("total_registros")) \
+    .orderBy("ano", ascending=True).limit(10)
+
+contagem_por_ano.show()
+
+# Grava o conteúdo no S3 em formato JSON e particionado por sexo e ano
+df_upper.write.mode("overwrite").partitionBy("sexo", "ano").json(target_path)

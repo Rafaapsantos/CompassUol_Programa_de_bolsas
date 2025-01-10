@@ -32,6 +32,8 @@ Voltei ao Glue e continuei seguindo os passos para concluir o processo.
 
 ![evidencia8](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia8.png)
 
+![evidencia19](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia19.png)
+
 Depois eu fiz o script python que foi pedido
 
 [script.py](../Sprint%207/Exercicios/AWS%20GLUE/script.py)
@@ -39,6 +41,40 @@ Depois eu fiz o script python que foi pedido
 Aqui eu forneci os parâmetros necessários
 
 ![evidencia9](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia9.png)
+
+Rodei e esses foram os resultados 
+
+O schema do dataframe
+
+![evidencia20](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia20.png)
+
+Contagem de linhas
+
+![evidencia21](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia21.png)
+
+Contagem de nomes, agrupando os dados do dataframe pelas colunas ano e sexo
+
+![evidencia22](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia22.png)
+
+Qual foi o nome feminino com mais registros e em que ano ocorreu
+
+![evidencia23](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia23.png)
+
+Qual foi o nome masculino com mais registros e em que ano ocorreu
+
+![evidencia24](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia24.png)
+
+O total de registros (masculinos e femininos) para cada ano presente no dataframe
+
+![evidencia25](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia25.png)
+
+Escrever o conteúdo do dataframe com os valores de nome em maiúsculo no S3
+
+![evidencia26](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia26.png)
+
+![evidencia27](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia27.png)
+
+![evidencia28](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia28.png)
 
 ##
 ### Exercício - TMDB
