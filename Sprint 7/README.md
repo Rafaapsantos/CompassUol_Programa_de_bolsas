@@ -76,6 +76,16 @@ Escrever o conteúdo do dataframe com os valores de nome em maiúsculo no S3
 
 ![evidencia28](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia28.png)
 
+Depois eu segui as instruções e fiz o Crawler e rodei ele.
+
+![evidencia29](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia29.png)
+
+![evidencia30](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia30.png)
+
+![evidencia31](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia31.png)
+
+![evidencia32](../Sprint%207/Evidencias/Evidencias_exercicios/evidencia32.png)
+
 ##
 ### Exercício - TMDB
 
