@@ -42,6 +42,18 @@ Decidi pegar as seguintes colunas do TMDB para complementar minha análise:
 * origin_country
 * original_language.
 
+Depois de criar o script para o Lambda, decidi testá-lo localmente antes. Para isso, criei um arquivo de teste.
+
+[teste.py](./etapa1/teste.py)
+
+Ao rodar o arquivo, percebi que alguns IDs não existiam na API. Então, excluí esses IDs da lista e rodei o teste novamente. Dessa vez, deu tudo certo.
+
+![evidencia2](../Evidencias/Evidencias_desafio/evidencia2.png)
+
+![evidencia2](../Evidencias/Evidencias_desafio/evidencia3.png)
+
+Após isso, atualizei a lista de IDs no script que será usado no Lambda.
+
 Na parte da AWS, a primeira coisa que fiz foi criar uma função dentro do Lambda chamada __ConsomeApiTMDB__.
 
 ![evidencia1](../Evidencias/Evidencias_desafio/evidencia1.png)
