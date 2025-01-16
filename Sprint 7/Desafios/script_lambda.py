@@ -6,7 +6,6 @@ from datetime import datetime
 
 chave_api = "api_key"
 LANGUAGE = "en-US"  # idioma das respostas da API
-url = "https://api.themoviedb.org/3/movie/"
 layer = "Raw/TMDB/JSON"  # caminho da camada no bucket
 max_registros = 100 # número máximo de registros que deve ter por arquivo
 tamanho_max_arquivo = 10 * 1024 * 1024  # tamanho máximo que deve ter por arquivo (10 MB)
@@ -26,7 +25,7 @@ def lambda_handler(event, context):
     # itera sobre os IDs do IMDb
     for imdb_id in imdb_ids:
         # URL de requisição da API do TMDB
-        url = f"{url}{imdb_id}?api_key={chave_api}&language={LANGUAGE}"
+        url = f"https://api.themoviedb.org/3/movie/{imdb_id}?api_key=063c07cb59d1b72142e651646370c1af&language=en-US"
         response = requests.get(url) # faz a requisição
         
         # se a resposta foi bem-sucedida, coverte ela para JSON
@@ -64,7 +63,7 @@ def save_to_s3(data, count_arquivo):
     
     # faz o upload do arquivo para o S3
     s3_client.put_object(
-        Bucket="nome bucket",
+        Bucket="datalake-rafaela-santos",
         Key=caminho_arquivo,
         Body=json.dumps(data),
         ContentType="application/json"

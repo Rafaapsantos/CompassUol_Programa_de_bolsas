@@ -58,11 +58,19 @@ Na parte da AWS, a primeira coisa que fiz foi criar uma função dentro do Lambd
 
 ![evidencia1](../Evidencias/Evidencias_desafio/evidencia1.png)
 
+Após isso eu colei o código que fiz dentro do code source. o código é esse abaixo:
 
-![evidencia2](../Evidencias/Evidencias_desafio/evidencia)
+[script_lambda.py](./script_lambda.py)
+
+![evidencia2](../Evidencias/Evidencias_desafio/evidencia4.png)
+
+Depois eu cliquei substitui a variavel *chave_api* com a minha chave que peguei da API TMDB.
+
+E depois cliquei em deploy para que a alteração do código seja realizada.
+
+![evidencia3](../Evidencias/Evidencias_desafio/evidencia5.png)
 
 
-![evidencia3](../Evidencias/Evidencias_desafio/evidencia)
 
 
 ![evidencia4](../Evidencias/Evidencias_desafio/evidencia)
