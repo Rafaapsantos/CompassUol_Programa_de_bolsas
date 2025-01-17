@@ -34,6 +34,7 @@ def lambda_handler(event, context):
             
             # extrai as informações relevantes para a minha análise dos filmes
             registros = {
+                "imdb_id": dados_movie.get("imdb_id"),
                 "budget": dados_movie.get("budget"),
                 "production_countries": dados_movie.get("production_countries"),
                 "popularity": dados_movie.get("popularity"),
@@ -57,9 +58,9 @@ def lambda_handler(event, context):
 
 def save_to_s3(data, count_arquivo):
     # pega a data atual no formato YYYY/MM/DD para criar os caminhos no bucket S3
-    data = datetime.now().strftime("%Y/%m/%d")
+    data_atual = datetime.now().strftime("%Y/%m/%d")
     nome_arquivo = f"arquivo-{count_arquivo}.json" # nome do arquivo
-    caminho_arquivo = f"{layer}/{data}/{nome_arquivo}" # caminho do bucket
+    caminho_arquivo = f"{layer}/{data_atual}/{nome_arquivo}" # caminho do bucket
     
     # faz o upload do arquivo para o S3
     s3_client.put_object(

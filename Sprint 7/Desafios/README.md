@@ -128,3 +128,11 @@ E para comprovar que as pastas foram criadas corretamente no bucket, tirei o pri
 ![evidencia16](../Evidencias/Evidencias_desafio/evidencia16.jpeg)
 
 ![evidencia17](../Evidencias/Evidencias_desafio/evidencia17.jpeg)
+
+E aqui estão os três arquivos que foram criados com os JSONs:
+
+[arquivo-1.json](./JSONS/arquivo-1.json)
+
+[arquivo-2.json](./JSONS/arquivo-2.json)
+
+[arquivo-3.json](./JSONS/arquivo-3.json)
