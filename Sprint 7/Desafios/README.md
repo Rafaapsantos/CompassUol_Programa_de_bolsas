@@ -23,7 +23,7 @@ A primeira coisa que fiz foi criar um arquivo .ipynb que filtra os IDs do arquiv
 
 Esse processo gerou dois arquivos:
 
-[filtro_generos.csv](./etapa1/filtrogeneros.csv)
+[filtro_generos.csv](./etapa1/filtro_generos.csv)
 
 [ids_generos.txt](./etapa1/ids_generos.txt)
 
@@ -41,6 +41,7 @@ Decidi pegar as seguintes colunas do TMDB para complementar minha análise:
 * popularity
 * origin_country
 * original_language.
+* imdb_id
 
 Depois de criar o script para o Lambda, decidi testá-lo localmente antes. Para isso, criei um arquivo de teste.
 
@@ -50,7 +51,7 @@ Ao rodar o arquivo, percebi que alguns IDs não existiam na API. Então, excluí
 
 ![evidencia2](../Evidencias/Evidencias_desafio/evidencia2.png)
 
-![evidencia2](../Evidencias/Evidencias_desafio/evidencia3.png)
+![evidencia3](../Evidencias/Evidencias_desafio/evidencia3.png)
 
 Após isso, atualizei a lista de IDs no script que será usado no Lambda.
 
@@ -58,28 +59,72 @@ Na parte da AWS, a primeira coisa que fiz foi criar uma função dentro do Lambd
 
 ![evidencia1](../Evidencias/Evidencias_desafio/evidencia1.png)
 
-Após isso eu colei o código que fiz dentro do code source. o código é esse abaixo:
+Após isso, colei o código que fiz dentro do code source. O código é este abaixo:
 
 [script_lambda.py](./script_lambda.py)
 
-![evidencia2](../Evidencias/Evidencias_desafio/evidencia4.png)
+![evidencia4](../Evidencias/Evidencias_desafio/evidencia4.png)
 
-Depois eu cliquei substitui a variavel *chave_api* com a minha chave que peguei da API TMDB.
+Em seguida, substituí a variável chave_api pela minha chave que obtive na API TMDB.
 
-E depois cliquei em deploy para que a alteração do código seja realizada.
+Depois, cliquei em Deploy para que a alteração do código fosse realizada.
 
-![evidencia3](../Evidencias/Evidencias_desafio/evidencia5.png)
+![evidencia5](../Evidencias/Evidencias_desafio/evidencia5.png)
 
+Para baixar as dependências, precisei criar um arquivo Dockerfile:
 
+[Dockerfile](./Dockerfile)
 
+Então, rodei os seguintes comandos:
 
-![evidencia4](../Evidencias/Evidencias_desafio/evidencia)
+Este comando cria uma imagem:
 
+![evidencia6](../Evidencias/Evidencias_desafio/evidencia6.png)
 
-![evidencia5](../Evidencias/Evidencias_desafio/evidencia)
+Este comando executa o container. Dentro do bash, ele cria os diretórios necessários e instala as dependências no diretório python:
 
+![evidencia7](../Evidencias/Evidencias_desafio/evidencia7.png)
 
-![evidencia6](../Evidencias/Evidencias_desafio/evidencia)
+Por fim, executei o comando __zip -r minha-camada-pandas.zip .__, mas acabei esquecendo de tirar um print.
 
+Depois, abri outro terminal e executei os dois comandos abaixo:
 
-![evidencia7](../Evidencias/Evidencias_desafio/evidencia)
+Este comando lista todos os containers, então copiei o ID do container que estava rodando:
+
+![evidencia8](../Evidencias/Evidencias_desafio/evidencia8.png)
+
+Finalmente, este comando compacta todos os arquivos em um arquivo chamado minha-camada-pandas.zip:
+
+![evidencia9](../Evidencias/Evidencias_desafio/evidencia9.png)
+
+[minha-camada-pandas.zip](./minha-camada-pandas.zip)
+
+Depois disso, fiz o upload do arquivo minha-camada-pandas.zip para o meu bucket.
+
+![evidencia11](../Evidencias/Evidencias_desafio/evidencia11.png)
+
+Em seguida, voltando para o Lambda, criei uma layer chamada LayerAPI. No campo de Link do URL do Amazon S3, inseri o Object URL que copiei do arquivo no bucket.
+
+![evidencia10](../Evidencias/Evidencias_desafio/evidencia10.png)
+
+Ainda no Lambda, fui na seção de funções e, dentro da aba *Code*, desci até a área de Layers. Cliquei em *Add a layer* e adicionei a layer que eu havia criado anteriormente.
+
+![evidencia12](../Evidencias/Evidencias_desafio/evidencia12.png)
+
+Depois, fui até a aba Configuration, cliquei em Permissions e, em seguida, no Role name.
+
+![evidencia13](../Evidencias/Evidencias_desafio/evidencia13.png)
+
+Isso abriu outra página, onde cliquei em Add permissions e depois em Attach policies. Busquei por AmazonS3FullAccess e selecionei essa permissão.
+
+![evidencia14](../Evidencias/Evidencias_desafio/evidencia14.png)
+
+Por fim, voltei ao Lambda, cliquei em Test para executar a função, e ela rodou corretamente.
+
+![evidencia15](../Evidencias/Evidencias_desafio/evidencia15.png)
+
+E para comprovar que as pastas foram criadas corretamente no bucket, tirei o print abaixo:
+
+![evidencia16](../Evidencias/Evidencias_desafio/evidencia16.jpeg)
+
+![evidencia17](../Evidencias/Evidencias_desafio/evidencia17.jpeg)

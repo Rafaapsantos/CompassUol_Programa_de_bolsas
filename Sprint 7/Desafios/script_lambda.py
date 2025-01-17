@@ -25,7 +25,7 @@ def lambda_handler(event, context):
     # itera sobre os IDs do IMDb
     for imdb_id in imdb_ids:
         # URL de requisição da API do TMDB
-        url = f"https://api.themoviedb.org/3/movie/{imdb_id}?api_key=063c07cb59d1b72142e651646370c1af&language=en-US"
+        url = f"https://api.themoviedb.org/3/movie/{imdb_id}?api_key={chave_api}&language=en-US"
         response = requests.get(url) # faz a requisição
         
         # se a resposta foi bem-sucedida, coverte ela para JSON
