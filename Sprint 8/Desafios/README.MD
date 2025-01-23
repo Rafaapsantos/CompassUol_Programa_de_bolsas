@@ -18,39 +18,30 @@ A partir dela, pretendo expandir a análise com outras perguntas, como:
 
 
 Vou detalhar um pouco mais sobre as minhas questões.
-1. 
-Essa análise ajuda a identificar características específicas, como direção, enredo e elenco, que fazem um filme ser altamente avaliado. Também pode revelar tendências no gênero, como preferências por temas, épocas ou diretores.
+1. Essa análise ajuda a identificar características específicas, como direção, enredo e elenco, que fazem um filme ser altamente avaliado. Também pode revelar tendências no gênero, como preferências por épocas ou diretores.
 
-2. 
-Permite identificar atores/atrizes especializados ou muito requisitados no gênero, além de evidenciar quais artistas são populares ou influentes em dramas e romances. Também pode revelar a versatilidade dos atores nesse tipo de produção.
+2. Permite identificar atores/atrizes especializados ou muito requisitados no gênero, além de evidenciar quais artistas são populares ou influentes em dramas e romances. Também pode revelar a versatilidade dos atores nesse tipo de produção.
 
-3. 
-Destaca profissionais com carreiras prolíficas no gênero, ajudando a compreender a preferência da indústria cinematográfica por certos artistas e sua relevância nesse contexto.
+3. Destaca profissionais com carreiras prolíficas no gênero, ajudando a compreender a preferência da indústria cinematográfica por certos artistas e sua relevância nesse contexto.
 
-4. 
-Revela quais filmes tiveram maior popularidade ou impacto, indicando uma possível correlação entre marketing, distribuição e o interesse do público.
+4. Revela quais filmes tiveram maior popularidade ou impacto, indicando uma possível correlação entre marketing, distribuição e o interesse do público.
 
-5. 
-Ajuda a identificar o perfil demográfico predominante dos atores no gênero e mostra se existe uma faixa etária mais favorecida para papéis nesse tipo de produção.
+5. Ajuda a identificar o perfil demográfico predominante dos atores no gênero e mostra se existe uma faixa etária mais favorecida para papéis nesse tipo de produção.
 
-6. 
-Identifica os líderes globais na produção do gênero, evidenciando a contribuição cultural e regional para dramas e romances.
+6. Identifica os líderes globais na produção do gênero, evidenciando a contribuição cultural e regional para dramas e romances.
 
-7. 
-Revela possíveis vieses regionais na avaliação ou consumo de filmes, ajudando a entender como o público responde a produções com base no país de origem.
+7. Revela possíveis vieses regionais na avaliação ou consumo de filmes, ajudando a entender como o público responde a produções com base no país de origem.
 
-8. 
-Mostra o padrão típico de duração para o gênero, ajudando na criação de produções que atendam às expectativas do público.
+8. Mostra o padrão típico de duração para o gênero, ajudando na criação de produções que atendam às expectativas do público.
 
-9. 
-Destaca países reconhecidos pela qualidade de suas produções, seja por direção, roteiro ou outros fatores, ajudando a entender a percepção global de excelência no gênero.
+9. Destaca países reconhecidos pela qualidade de suas produções, seja por direção, roteiro ou outros fatores, ajudando a entender a percepção global de excelência no gênero.
 
 #
 Eu tentei criar um código que fosse capaz de criar as pastas e, em seguida, salvar o arquivo .parquet diretamente no bucket, mas não consegui implementar da maneira que desejava.
 
-Por isso, criei um script separado para criar as pastas necessárias utilizando a biblioteca boto3.
+Por isso, criei dois scripts separado para criar as pastas necessárias utilizando a biblioteca boto3.
 
-Segue o script que desenvolvi:
+Segue o script que cria as pastas pro CSV que desenvolvi:
 [cria_pastas_csv.py](./cria_pastas_csv.py)
 
 Após rodar o script, obtive o seguinte resultado:
@@ -58,6 +49,15 @@ Após rodar o script, obtive o seguinte resultado:
 ![evidencia9](../Evidencias/Evidencias_desafio/evidencia9.png)
 
 ![evidencia10](../Evidencias/Evidencias_desafio/evidencia10.png)
+
+Segue o script que cria as pastas pro JSON que desenvolvi:
+[cria_pastas_csv.py](./cria_pastas_json.py)
+
+Após rodar o script, obtive o seguinte resultado:
+
+![evidencia12](../Evidencias/Evidencias_desafio/evidencia)
+
+![evidencia13](../Evidencias/Evidencias_desafio/evidencia)
 
 ### JOB CSV
 A primeira coisa que fiz foi escrever o script pro job csv que foi solicitados nas instruções do desafio.
@@ -110,3 +110,50 @@ Depois, fui até o S3 para verificar se o processo havia sido executado corretam
 
 ![evidencia11](../Evidencias/Evidencias_desafio/evidencia11.gif)
 
+
+### JOB JSON
+A primeira coisa que fiz foi escrever o script pro job json que foi solicitados nas instruções do desafio.
+
+O script que escrevi para o job JSON é o seguinte:
+
+[job_csv.py](./job_json.py)
+
+__RESUMO DO CÓDIGO:__
+
+__EXECUÇÃO:__
+Primeiro, utilizei o AWS Lake Formation para criar o banco de dados onde o crawler futuramente adicionará automaticamente uma tabela a partir dos dados armazenados no S3.
+
+![evidencia12](../Evidencias/Evidencias_desafio/evidencia)
+
+![evidencia12](../Evidencias/Evidencias_desafio/evidencia)
+
+Depois disso, criei um novo job para processar o meu script CSV. Para isso, segui as recomendações fornecidas nas instruções do desafio.
+
+![evidencia3](../Evidencias/Evidencias_desafio/evidencia3.png)
+
+![evidencia4](../Evidencias/Evidencias_desafio/evidencia12.png)
+
+![evidencia5](../Evidencias/Evidencias_desafio/evidencia5.png)
+
+Após configurar o job, cliquei em Save.
+
+Com o job criado e configurado, defini os parâmetros S3_INPUT_PATH e S3_TARGET_PATH no campo Job Parameters:
+
+![evidencia6](../Evidencias/Evidencias_desafio/evidencia)
+
+S3_INPUT_PATH: s3://datalake-rafaela-santos/Raw/TMDB/JSON/2025/01/17/
+S3_TARGET_PATH:  ?
+
+Depois, cliquei novamente em Save.
+
+Por fim, inseri o código no Glue e cliquei em Run para executar o job.
+
+![evidencia7](../Evidencias/Evidencias_desafio/evidencia)
+
+Fui até o Job Run Monitoring e acompanhei a execução.
+
+![evidencia8](../Evidencias/Evidencias_desafio/evidencia)
+
+Depois, fui até o S3 para verificar se o processo havia sido executado corretamente e se os arquivos estavam no caminho esperado.
+
+![evidencia11](../Evidencias/Evidencias_desafio/evidencia)
