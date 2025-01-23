@@ -5,8 +5,10 @@
 Primeiro, vou explorar a seguinte questão:
 
 * Qual foi o ano em que mais filmes de Drama/Romance foram lançados?
-Incluí mais algumas possíveis perguntas na minha análise.
+
 A partir dela, pretendo expandir a análise com outras perguntas, como:
+
+Incluí mais algumas possíveis perguntas na minha análise.
 
 1. Quais são os 10 filmes mais bem avaliados no gênero Drama/Romance?
 2. Quais artistas têm mais personagens associados a filmes desse gênero?
@@ -51,13 +53,13 @@ Após rodar o script, obtive o seguinte resultado:
 ![evidencia10](../Evidencias/Evidencias_desafio/evidencia10.png)
 
 Segue o script que cria as pastas pro JSON que desenvolvi:
-[cria_pastas_csv.py](./cria_pastas_json.py)
+[cria_pastas_json.py](./cria_pastas_json.py)
 
 Após rodar o script, obtive o seguinte resultado:
 
 ![evidencia24](../Evidencias/Evidencias_desafio/evidencia24.png)
 
-![evidencia13](../Evidencias/Evidencias_desafio/evidencia25.png)
+![evidencia25](../Evidencias/Evidencias_desafio/evidencia25.png)
 
 __OBS:__ *Lembrando que, para testar o código, é necessário substituir as credenciais, mas eu não coloquei as minhas aqui por questões de segurança.*
 
@@ -70,7 +72,7 @@ O script que escrevi para o job do CSV é o seguinte:
 
 Fiz essa filtragem para garantir que os filmes ficassem iguais aos filmes que puxei do TMDB na sprint passada.
 
-__RESUMO DO CÓDIGO:__ 
+__RESUMO DO CÓDIGO:__ O meu código processa um arquivo CSV localizado no S3. Ele lê os dados, filtra os filmes com base em uma lista de IDs do IMDb que eu peguei da sprint 7 e seleciona apenas as colunas necessárias para a minha análise. Após realizar o filtro e seleção das colunas, o DataFrame resultante é salvo no formato Parquet. 
 
 __EXECUÇÃO:__
 Primeiro, utilizei o AWS Lake Formation para criar o banco de dados onde o crawler futuramente adicionará automaticamente uma tabela a partir dos dados armazenados no S3.
@@ -99,6 +101,8 @@ Fui até o Job Run Monitoring e acompanhei a execução.
 
 ![evidencia7](../Evidencias/Evidencias_desafio/evidencia7.png)
 
+Depois, fui até o S3 para verificar se o processo havia sido executado corretamente e se os arquivos estavam no caminho esperado.
+
 ![evidencia8](../Evidencias/Evidencias_desafio/evidencia8.png)
 
 Depois de concluir essas etapas, criei o Crawler para gerar uma tabela a partir dos dados armazenados no S3.
@@ -119,9 +123,9 @@ Em seguida, selecionei o Crawler que havia criado e cliquei em Run para executá
 
 ![evidencia21](../Evidencias/Evidencias_desafio/evidencia21.png)
 
-![evidencia22](../Evidencias/Evidencias_desafio/evidencia22.png)
+Após a execução, cliquei em Table, depois em Table Data e depois em Proceed, o que abriu o Athena com o comando SQL já gerado para realizar um SELECT.
 
-Após a execução, cliquei em Table Data e depois em Proceed, o que abriu o Athena com o comando SQL já gerado para realizar um SELECT.
+![evidencia22](../Evidencias/Evidencias_desafio/evidencia22.png)
 
 ![evidencia23](../Evidencias/Evidencias_desafio/evidencia23.png)
 
@@ -136,14 +140,15 @@ O script que escrevi para o job JSON é o seguinte:
 
 [job_csv.py](./job_json.py)
 
-__RESUMO DO CÓDIGO:__ 
+__RESUMO DO CÓDIGO:__ O meu código processa meus arquivos JSONs localizado no S3. Ele lê os arquivos JSONs armazenado no S3, convertendo os dados para um DataFrame. Em seguida, esses dados são gravados no formato Parquet em outro diretório do S3.
+Eu não apliquei nenhum filtro, pois na sprint 7 já tinha realizado a filtragem dos filmes e das colunas que eu precisava.
 
 __EXECUÇÃO:__
 Primeiro, utilizei o AWS Lake Formation para criar o banco de dados onde o crawler futuramente adicionará automaticamente uma tabela a partir dos dados armazenados no S3.
 
-![evidencia12](../Evidencias/Evidencias_desafio/evidencia14.png)
+![evidencia14](../Evidencias/Evidencias_desafio/evidencia14.png)
 
-![evidencia12](../Evidencias/Evidencias_desafio/evidencia15.png)
+![evidencia15](../Evidencias/Evidencias_desafio/evidencia15.png)
 
 Depois disso, criei um novo job para processar o meu script CSV. Para isso, segui as recomendações fornecidas nas instruções do desafio.
 
@@ -151,36 +156,23 @@ Depois disso, criei um novo job para processar o meu script CSV. Para isso, segu
 
 Aqui utilizei o mesmo IAM Role que foi criado no exercício de Glue da Sprint 7.
 
-![evidencia4](../Evidencias/Evidencias_desafio/evidencia12.png)
+![evidencia12](../Evidencias/Evidencias_desafio/evidencia12.png)
 
 ![evidencia5](../Evidencias/Evidencias_desafio/evidencia5.png)
 
 Após configurar o job, cliquei em Save.
 
-Com o job criado e configurado, defini os parâmetros S3_INPUT_PATH e S3_TARGET_PATH no campo Job Parameters:
+Inseri o código no Glue e cliquei em Run para executar o job.
 
-![evidencia6](../Evidencias/Evidencias_desafio/evidencia26.png)
-
-S3_INPUT_PATH: s3://datalake-rafaela-santos/Raw/TMDB/JSON/2025/01/17/
-S3_TARGET_PATH:  s3://datalake-rafaela-santos/Trusted/TMDB/Parquet/movies/2025/01/17/
-
-Depois, cliquei novamente em Save.
-
-Por fim, inseri o código no Glue e cliquei em Run para executar o job.
-
-![evidencia7](../Evidencias/Evidencias_desafio/evidencia13.png)
+![evidencia13](../Evidencias/Evidencias_desafio/evidencia13.png)
 
 Fui até o Job Run Monitoring e acompanhei a execução.
 
-![evidencia8](../Evidencias/Evidencias_desafio/evidencia)
+![evidencia35](../Evidencias/Evidencias_desafio/evidencia35.png)
 
 Depois, fui até o S3 para verificar se o processo havia sido executado corretamente e se os arquivos estavam no caminho esperado.
 
-![evidencia11](../Evidencias/Evidencias_desafio/evidencia)
-
-
-
-
+![evidencia36](../Evidencias/Evidencias_desafio/evidencia36.png)
 
 Depois de concluir essas etapas, criei o Crawler para gerar uma tabela a partir dos dados armazenados no S3.
 
@@ -200,7 +192,7 @@ Em seguida, selecionei o Crawler que havia criado e cliquei em Run para executá
 
 ![evidencia32](../Evidencias/Evidencias_desafio/evidencia32.png)
 
-Após a execução, cliquei em Table Data e depois em Proceed, o que abriu o Athena com o comando SQL já gerado para realizar um SELECT.
+Após a execução, cliquei em Table, depois em Table Data e depois em Proceed, o que abriu o Athena com o comando SQL já gerado para realizar um SELECT.
 
 ![evidencia33](../Evidencias/Evidencias_desafio/evidencia33.png)
 
