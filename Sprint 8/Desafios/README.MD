@@ -59,6 +59,8 @@ Após rodar o script, obtive o seguinte resultado:
 
 ![evidencia13](../Evidencias/Evidencias_desafio/evidencia)
 
+__OBS:__ *Lembrando que, para testar o código, é necessário substituir as credenciais, mas eu não coloquei as minhas aqui por questões de segurança.*
+
 ### JOB CSV
 A primeira coisa que fiz foi escrever o script pro job csv que foi solicitados nas instruções do desafio.
 
@@ -118,7 +120,7 @@ O script que escrevi para o job JSON é o seguinte:
 
 [job_csv.py](./job_json.py)
 
-__RESUMO DO CÓDIGO:__
+__RESUMO DO CÓDIGO:__ Meu código foi desenvolvido em PySpark, e processa dados de filmes armazenados no S3. Ele inicia configurando o contexto do Glue e do Spark para manipular os dados. Em seguida o script lê um arquivo JSON armazenado no S3 como um DynamicFrame e o converte para um DataFrame do Spark para facilitar o processamento. Após a conversão, ele seleciona apenas as colunas relevantes para limpar e organizar os dados para a minha análise. Por fim, os dados limpos são salvos no formato Parquet no caminho de destino no S3.
 
 __EXECUÇÃO:__
 Primeiro, utilizei o AWS Lake Formation para criar o banco de dados onde o crawler futuramente adicionará automaticamente uma tabela a partir dos dados armazenados no S3.
