@@ -17,7 +17,7 @@ s3_client = boto3.client(
 bucket_name = "datalake-rafaela-santos"
 
 # Caminho das pastas que quero criar
-folder_path = "????///"
+folder_path = "Trusted/TMDB/Parquet/movies/2025/01/17/"
 
 # Função que cria a estrutura de pastas no S3
 def create_s3_folder(s3_client, bucket_name, folder_path):

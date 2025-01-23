@@ -1,45 +1,27 @@
 import sys
+from awsglue.transforms import *
+from awsglue.utils import getResolvedOptions
 from pyspark.context import SparkContext
 from awsglue.context import GlueContext
 from awsglue.job import Job
-from pyspark.sql.functions import col
-from awsglue.utils import getResolvedOptions
 
-
-## @params: [JOB_NAME]
-args = getResolvedOptions(sys.argv, ['JOB_NAME', 'S3_INPUT_PATH', 'S3_TARGET_PATH'])
-
-# Inicializa o SparkContext e GlueContext para manipulação dos dados
+# Parâmetros da Glue Job
+args = getResolvedOptions(sys.argv, ['JOB_NAME'])
 sc = SparkContext()
 glueContext = GlueContext(sc)
 spark = glueContext.spark_session
-# Inicializa o job do AWS Glue
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-# Define os caminhos de entrada e saída
-source_file = args['S3_INPUT_PATH']
-target_path = args['S3_TARGET_PATH']
+# Caminhos S3
+input_path = "s3://datalake-rafaela-santos/Raw/TMDB/JSON/2025/01/17/"
+output_path = "s3://datalake-rafaela-santos/Trusted/TMDB/Parquet/movies/2025/01/17/"
 
-# Lê o arquivo JSON localizado no S3 como DynamicFrame
-df_dynamic = glueContext.create_dynamic_frame.from_options(
-    connection_type="s3",
-    connection_options={"paths": [source_file]},
-    format="json",
-)
+# Leitura do arquivo JSON
+datasource = spark.read.json(input_path)
 
-# Converte o DynamicFrame para DataFrame
-df = df_dynamic.toDF()
+# Conversão para formato Parquet
+datasource.write.mode("overwrite").parquet(output_path)
 
-# Define as colunas que eu escolhi, para serem mantidas no DataFrame final
-colunas_selecionadas = [
-    "imdb_id", "budget", "production_countries",
-    "popularity", "origin_country", "original_language"
-]
-# Seleciona apenas as colunas relevantes
-dados_limpos = df.select(*colunas_selecionadas)
-
-# Salva os dados no formato Parquet
-dados_limpos.write.mode("overwrite").parquet(target_path)
- 
+# Finalização do job
 job.commit()

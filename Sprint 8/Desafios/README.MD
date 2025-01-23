@@ -55,9 +55,9 @@ Segue o script que cria as pastas pro JSON que desenvolvi:
 
 Após rodar o script, obtive o seguinte resultado:
 
-![evidencia12](../Evidencias/Evidencias_desafio/evidencia)
+![evidencia24](../Evidencias/Evidencias_desafio/evidencia24.png)
 
-![evidencia13](../Evidencias/Evidencias_desafio/evidencia)
+![evidencia13](../Evidencias/Evidencias_desafio/evidencia25.png)
 
 __OBS:__ *Lembrando que, para testar o código, é necessário substituir as credenciais, mas eu não coloquei as minhas aqui por questões de segurança.*
 
@@ -70,9 +70,7 @@ O script que escrevi para o job do CSV é o seguinte:
 
 Fiz essa filtragem para garantir que os filmes ficassem iguais aos filmes que puxei do TMDB na sprint passada.
 
-__RESUMO DO CÓDIGO:__ Meu código foi desenvolvido em PySpark, e processa dados de filmes armazenados no S3. Primeiro, ele lê um arquivo CSV do S3, e converte esse arquivo para um DataFrame. Em seguida, filtra os dados para selecionar apenas os filmes do gênero "Drama,Romance" lançados em 2016. Além disso, ele compara os IDs dos filmes com uma lista predefinida de IDs IMDB e seleciona apenas aqueles que estão na lista pois são os mesmos que estão no json. Depois, remove duplicatas com base no ID do filme e seleciona um conjunto específico de colunas que serão mantidas no DataFrame final para eu usar na minha análise.
-
-Por fim, os dados limpos são gravados no formato Parquet em um novo caminho no S3. 
+__RESUMO DO CÓDIGO:__ 
 
 __EXECUÇÃO:__
 Primeiro, utilizei o AWS Lake Formation para criar o banco de dados onde o crawler futuramente adicionará automaticamente uma tabela a partir dos dados armazenados no S3.
@@ -85,33 +83,51 @@ Depois disso, criei um novo job para processar o meu script CSV. Para isso, segu
 
 ![evidencia3](../Evidencias/Evidencias_desafio/evidencia3.png)
 
+Aqui utilizei o mesmo IAM Role que foi criado no exercício de Glue da Sprint 7
+
 ![evidencia4](../Evidencias/Evidencias_desafio/evidencia4.png)
 
 ![evidencia5](../Evidencias/Evidencias_desafio/evidencia5.png)
 
 Após configurar o job, cliquei em Save.
 
-Com o job criado e configurado, defini os parâmetros S3_INPUT_PATH e S3_TARGET_PATH no campo Job Parameters:
+Por fim, inseri o código no Glue e cliquei em Run para executar o job.
 
 ![evidencia6](../Evidencias/Evidencias_desafio/evidencia6.png)
 
-S3_INPUT_PATH: s3://datalake-rafaela-santos/Raw/Local/CSV/Movies/2025/01/02/movies.csv
-S3_TARGET_PATH: s3://datalake-rafaela-santos/Trusted/Local/Parquet/movies/
-
-Depois, cliquei novamente em Save.
-
-Por fim, inseri o código no Glue e cliquei em Run para executar o job.
+Fui até o Job Run Monitoring e acompanhei a execução.
 
 ![evidencia7](../Evidencias/Evidencias_desafio/evidencia7.png)
 
-Fui até o Job Run Monitoring e acompanhei a execução.
+![evidencia8](../Evidencias/Evidencias_desafio/evidencia8.png)
 
-![evidencia8](../Evidencias/Evidencias_desafio/evidencia8.gif)
+Depois de concluir essas etapas, criei o Crawler para gerar uma tabela a partir dos dados armazenados no S3.
 
-Depois, fui até o S3 para verificar se o processo havia sido executado corretamente e se os arquivos estavam no caminho esperado.
+![evidencia16](../Evidencias/Evidencias_desafio/evidencia16.png)
 
-![evidencia11](../Evidencias/Evidencias_desafio/evidencia11.gif)
+![evidencia17](../Evidencias/Evidencias_desafio/evidencia17.png)
 
+Aqui utilizei o mesmo IAM Role que foi criado no exercício de Glue da Sprint 7.
+
+![evidencia18](../Evidencias/Evidencias_desafio/evidencia18.png)
+
+![evidencia19](../Evidencias/Evidencias_desafio/evidencia19.png)
+
+![evidencia20](../Evidencias/Evidencias_desafio/evidencia20.png)
+
+Em seguida, selecionei o Crawler que havia criado e cliquei em Run para executá-lo.
+
+![evidencia21](../Evidencias/Evidencias_desafio/evidencia21.png)
+
+![evidencia22](../Evidencias/Evidencias_desafio/evidencia22.png)
+
+Após a execução, cliquei em Table Data e depois em Proceed, o que abriu o Athena com o comando SQL já gerado para realizar um SELECT.
+
+![evidencia23](../Evidencias/Evidencias_desafio/evidencia23.png)
+
+Eu cliquei em Run again para confirmar se estava tudo correto, e esse foi o resultado obtido:
+
+![evidencia27](../Evidencias/Evidencias_desafio/evidencia27.png)
 
 ### JOB JSON
 A primeira coisa que fiz foi escrever o script pro job json que foi solicitados nas instruções do desafio.
@@ -120,18 +136,20 @@ O script que escrevi para o job JSON é o seguinte:
 
 [job_csv.py](./job_json.py)
 
-__RESUMO DO CÓDIGO:__ Meu código foi desenvolvido em PySpark, e processa dados de filmes armazenados no S3. Ele inicia configurando o contexto do Glue e do Spark para manipular os dados. Em seguida o script lê um arquivo JSON armazenado no S3 como um DynamicFrame e o converte para um DataFrame do Spark para facilitar o processamento. Após a conversão, ele seleciona apenas as colunas relevantes para limpar e organizar os dados para a minha análise. Por fim, os dados limpos são salvos no formato Parquet no caminho de destino no S3.
+__RESUMO DO CÓDIGO:__ 
 
 __EXECUÇÃO:__
 Primeiro, utilizei o AWS Lake Formation para criar o banco de dados onde o crawler futuramente adicionará automaticamente uma tabela a partir dos dados armazenados no S3.
 
-![evidencia12](../Evidencias/Evidencias_desafio/evidencia)
+![evidencia12](../Evidencias/Evidencias_desafio/evidencia14.png)
 
-![evidencia12](../Evidencias/Evidencias_desafio/evidencia)
+![evidencia12](../Evidencias/Evidencias_desafio/evidencia15.png)
 
 Depois disso, criei um novo job para processar o meu script CSV. Para isso, segui as recomendações fornecidas nas instruções do desafio.
 
 ![evidencia3](../Evidencias/Evidencias_desafio/evidencia3.png)
+
+Aqui utilizei o mesmo IAM Role que foi criado no exercício de Glue da Sprint 7.
 
 ![evidencia4](../Evidencias/Evidencias_desafio/evidencia12.png)
 
@@ -141,16 +159,16 @@ Após configurar o job, cliquei em Save.
 
 Com o job criado e configurado, defini os parâmetros S3_INPUT_PATH e S3_TARGET_PATH no campo Job Parameters:
 
-![evidencia6](../Evidencias/Evidencias_desafio/evidencia)
+![evidencia6](../Evidencias/Evidencias_desafio/evidencia26.png)
 
 S3_INPUT_PATH: s3://datalake-rafaela-santos/Raw/TMDB/JSON/2025/01/17/
-S3_TARGET_PATH:  ?
+S3_TARGET_PATH:  s3://datalake-rafaela-santos/Trusted/TMDB/Parquet/movies/2025/01/17/
 
 Depois, cliquei novamente em Save.
 
 Por fim, inseri o código no Glue e cliquei em Run para executar o job.
 
-![evidencia7](../Evidencias/Evidencias_desafio/evidencia)
+![evidencia7](../Evidencias/Evidencias_desafio/evidencia13.png)
 
 Fui até o Job Run Monitoring e acompanhei a execução.
 
@@ -159,3 +177,33 @@ Fui até o Job Run Monitoring e acompanhei a execução.
 Depois, fui até o S3 para verificar se o processo havia sido executado corretamente e se os arquivos estavam no caminho esperado.
 
 ![evidencia11](../Evidencias/Evidencias_desafio/evidencia)
+
+
+
+
+
+Depois de concluir essas etapas, criei o Crawler para gerar uma tabela a partir dos dados armazenados no S3.
+
+![evidencia28](../Evidencias/Evidencias_desafio/evidencia28.png)
+
+![evidencia29](../Evidencias/Evidencias_desafio/evidencia29.png)
+
+Aqui utilizei o mesmo IAM Role que foi criado no exercício de Glue da Sprint 7.
+
+![evidencia18](../Evidencias/Evidencias_desafio/evidencia18.png)
+
+![evidencia30](../Evidencias/Evidencias_desafio/evidencia30.png)
+
+![evidencia31](../Evidencias/Evidencias_desafio/evidencia31.png)
+
+Em seguida, selecionei o Crawler que havia criado e cliquei em Run para executá-lo.
+
+![evidencia32](../Evidencias/Evidencias_desafio/evidencia32.png)
+
+Após a execução, cliquei em Table Data e depois em Proceed, o que abriu o Athena com o comando SQL já gerado para realizar um SELECT.
+
+![evidencia33](../Evidencias/Evidencias_desafio/evidencia33.png)
+
+Eu cliquei em Run again para confirmar se estava tudo correto, e esse foi o resultado obtido:
+
+![evidencia34](../Evidencias/Evidencias_desafio/evidencia34.png)
