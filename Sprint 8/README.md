@@ -1,5 +1,6 @@
 # Sprint 8
 ## Desafio
+O desafio consistia em aplicar os conhecimentos adquiridos ao longo do Programa de Bolsas para transformar os arquivos nos formatos CSV e JSON em arquivos Parquet, organizando-os na camada Trusted. Essa camada é responsável por armazenar dados já tratados e confiáveis.
 
 [Desafio](./Desafios/)
 
@@ -107,6 +108,11 @@ Utilizei o Spark SQL para obter a quantidade de pessoas de cada país, separadas
 E assim finalizei todas as etapas deste exercício.
 
 ## Opnião:
+Achei esse desafio muito interessante! Apesar de ter enfrentado algumas dificuldades para criar um código que atendesse exatamente ao que foi solicitado, consegui resolver e executar com sucesso no final.
 
 ## O que aprendi?
-1. 
+1. Tutoriais Técnicos - Analytics
+* Transformar os dados em insights
+* Transformar e catalogar os dados com o AWS Glue
+* Consultar os dados com o AWS Athena
+* Visualizar os dados com o Amazon Quicksight

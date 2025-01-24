@@ -43,6 +43,8 @@ Eu tentei criar um código que fosse capaz de criar as pastas e, em seguida, sal
 
 Por isso, criei dois scripts separado para criar as pastas necessárias utilizando a biblioteca boto3.
 
+__OBS:__ Tive bastante dúvida ao definir os caminhos no início, mas consegui resolver após pedir ajuda ao monitor, que explicou como os caminhos deveriam ser configurados. Com isso, consegui avançar e concluir a tarefa. 
+
 Segue o script que cria as pastas pro CSV que desenvolvi:
 [cria_pastas_csv.py](./cria_pastas_csv.py)
 
