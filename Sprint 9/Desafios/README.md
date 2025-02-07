@@ -65,5 +65,47 @@ Para as ligações entre as tabelas, utilizei a relação __"1 optional to many 
 * Do lado do "1 optional", uma ocorrência da entidade __A__ pode ou não estar associada à entidade __B__, tornando sua participação na relação opcional.
 * Do lado do "many mandatory", cada ocorrência da entidade __B__ deve estar associada a pelo menos uma ocorrência da entidade __A__, podendo estar vinculada a várias.
 
-### Código
+### Envia arquivos pra camada refined
+
+Segui o mesmo processo da sprint passada e criei um script separado para gerar a pasta Refined, utilizando a biblioteca boto3.
+
+Segue o script que cria a pastas Refined que desenvolvi:
+[cria_camada_refined.py](./cria_camada_refined.py)
+
+Após rodar o script, obtive o seguinte resultado:
+
+![evidencia10](../Evidencias/evidencia10.png)
+
+![evidencia12](../Evidencias/evidencia12.png)
+
+A primeira coisa que fiz foi escrever o script para fazer todas as mudanças necessarias e enviar pra camada refined.
+
+O script que escrevi é o seguinte:
+
+[tabelas_camada_refined.py](./tabelas_camada_refined.py)
+
+__EXECUÇÃO:__
+Primeiro, utilizei o AWS Lake Formation para criar o banco de dados onde o crawler futuramente adicionará automaticamente uma tabela a partir dos dados armazenados no S3.
+
+![evidencia5](../Evidencias/evidencia5.png)
+
+![evidencia6](../Evidencias/evidencia6.png)
+
+Depois disso, criei um novo job para processar o meu script. Para isso, segui as recomendações fornecidas nas instruções do desafio.
+
+![evidencia7](../Evidencias/evidencia7.png)
+
+![evidencia8](../Evidencias/evidencia8.png)
+
+![evidencia9](../Evidencias/evidencia9.png)
+
+Após configurar o job, cliquei em Save.
+
+Inseri o código no Glue e cliquei em Run para executar o job.
+
+![evidencia6](../Evidencias/evidencia6.png)
+
+Fui até o Job Run Monitoring e acompanhei a execução.
+
+
 
