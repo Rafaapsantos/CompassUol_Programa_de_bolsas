@@ -32,6 +32,14 @@ movies = movies.filter(size(col("production_countries")) > 0)
 # Filtra os registros para remover linhas que estiverem igual a '\N' na coluna 'anonascimento' (Vi isso quando fiz uma consulta no athena)
 movies = movies.filter(col("anonascimento") != "\\N")
 
+# Converter para double
+movies = movies.withColumn("notamedia", when(col("notamedia") == "\\N", None).otherwise(col("notamedia").cast("double")))
+
+# Converter para int
+int_columns = ["numerovotos", "anofalecimento", "anonascimento", "anolancamento", "tempominutos"]
+for col_name in int_columns:
+    movies = movies.withColumn(col_name, when(col(col_name) == "\\N", None).otherwise(col(col_name).cast("int")))
+    
 # Criação de tabelas dimensionais e fato, utilizando IDs sequenciais para cada dimensão
 
 # Cria a dimensão 'dim_pais' com países únicos e gerando um ID sequencial

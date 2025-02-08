@@ -78,6 +78,8 @@ Após rodar o script, obtive o seguinte resultado:
 
 ![evidencia12](../Evidencias/evidencia12.png)
 
+__OBS:__ *Lembrando que, para testar o código, é necessário substituir as credenciais, mas eu não coloquei as minhas aqui por questões de segurança.*
+
 A primeira coisa que fiz foi escrever o script para fazer todas as mudanças necessarias e enviar pra camada refined.
 
 O script que escrevi é o seguinte:
@@ -103,9 +105,48 @@ Após configurar o job, cliquei em Save.
 
 Inseri o código no Glue e cliquei em Run para executar o job.
 
-![evidencia6](../Evidencias/evidencia6.png)
+![evidencia13](../Evidencias/evidencia13.png)
 
 Fui até o Job Run Monitoring e acompanhei a execução.
 
+![evidencia11](../Evidencias/evidencia11.gif)
 
+Depois, fui até o S3 para verificar se o processo havia sido executado corretamente e se os arquivos estavam no caminho esperado.
 
+![evidencia14](../Evidencias/evidencia14.gif)
+
+Depois de concluir essas etapas, criei o Crawler para gerar uma tabela a partir dos dados armazenados no S3.
+
+![evidencia15](../Evidencias/evidencia15.png)
+
+![evidencia16](../Evidencias/evidencia16.png)
+
+![evidencia17](../Evidencias/evidencia17.png)
+
+Aqui utilizei o mesmo IAM Role que foi criado no exercício de Glue da Sprint 7.
+
+![evidencia18](../Evidencias/evidencia18.png)
+
+![evidencia19](../Evidencias/evidencia19.png)
+
+![evidencia20](../Evidencias/evidencia20.png)
+
+Em seguida, selecionei o Crawler que havia criado e cliquei em Run para executá-lo.
+
+![evidencia21](../Evidencias/evidencia21.gif)
+
+Após a execução, cliquei em Tables.
+
+![evidencia22](../Evidencias/evidencia22.png)
+
+Depois em cada tabelas eu cliquei em Table Data e depois em Proceed, o que abriu o Athena com o comando SQL já gerado para realizar um SELECT.
+
+Eu cliquei em Run again para confirmar se estava tudo correto, e esses foram os resultados obtidos:
+
+![evidencia23](../Evidencias/evidencia23.png)
+
+![evidencia24](../Evidencias/evidencia24.png)
+
+![evidencia24](../Evidencias/evidencia25.png)
+
+![evidencia26](../Evidencias/evidencia26.png)
