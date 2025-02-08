@@ -65,20 +65,8 @@ Para as ligações entre as tabelas, utilizei a relação __"1 optional to many 
 * Do lado do "1 optional", uma ocorrência da entidade __A__ pode ou não estar associada à entidade __B__, tornando sua participação na relação opcional.
 * Do lado do "many mandatory", cada ocorrência da entidade __B__ deve estar associada a pelo menos uma ocorrência da entidade __A__, podendo estar vinculada a várias.
 
+#
 ### Envia arquivos pra camada refined
-
-Segui o mesmo processo da sprint passada e criei um script separado para gerar a pasta Refined, utilizando a biblioteca boto3.
-
-Segue o script que cria a pastas Refined que desenvolvi:
-[cria_camada_refined.py](./cria_camada_refined.py)
-
-Após rodar o script, obtive o seguinte resultado:
-
-![evidencia10](../Evidencias/evidencia10.png)
-
-![evidencia12](../Evidencias/evidencia12.png)
-
-__OBS:__ *Lembrando que, para testar o código, é necessário substituir as credenciais, mas eu não coloquei as minhas aqui por questões de segurança.*
 
 A primeira coisa que fiz foi escrever o script para fazer todas as mudanças necessarias e enviar pra camada refined.
 
@@ -86,7 +74,57 @@ O script que escrevi é o seguinte:
 
 [tabelas_camada_refined.py](./tabelas_camada_refined.py)
 
-__EXECUÇÃO:__
+__SOBRE O CÓDIGO:__
+
+Agora vou explicar um pouco sobre algumas partes importante do script que desenvolvi.
+
+![evidencia27](../Evidencias/evidencia27.png)
+Aqui, o script carrega os arquivos Parquet que foram colocados na camada Trusted na sprint passada.
+* movie_local: Variável que carrega os dados do arquivo CSV.
+* movie_tmdb: Variável que carrega os dados extraídos da API TMDB.
+
+Além disso, o script realiza uma junção (join) entre os DataFrames movies_local e movies_tmdb. A junção ocorre onde a coluna id de movies_local for igual à coluna imdb_id de movies_tmdb, que foram extraídas na sprint 7. Foi utilizada a estratégia de inner join, ou seja, apenas os registros que têm correspondência em ambas as tabelas são mantidos. O resultado dessa junção é armazenado no DataFrame movies.
+
+![evidencia28](../Evidencias/evidencia28.png)
+
+Primeiramente, o script remove as colunas que não serão mais utilizadas. A decisão de exclusão foi baseada na análise dos dados no Athena:
+* budget: A maioria dos filmes não possuía um valor registrado, o que inviabilizaria uma análise significativa.
+* titulopincipal: Como a coluna titulooriginal já estava presente, não fazia sentido manter ambas.
+* personagem: Após a reformulação das perguntas da análise, essa coluna deixou de ser relevante.
+
+Em seguida, o script filtra os registros para remover as linhas onde a coluna production_countries está vazia. Essa decisão foi tomada após a análise dos dados no Athena, onde foi identificado que alguns registros não possuíam essa informação.
+
+Por fim, o script também remove as linhas onde a coluna anonascimento estava vazia. Durante a análise no Athena, foi identificado que algumas dessas células continham o valor "\N", indicando ausência de informação.
+
+![evidencia29](../Evidencias/evidencia29.png)
+
+Inicialmente, rodei o código sem essa parte, mas depois percebi que havia esquecido de alterar os tipos das colunas. Como os dados do CSV estavam todos como string, e eu precisaria realizar cálculos na análise, fiz a conversão necessária. A coluna notaMedia foi convertida para double, enquanto as demais colunas foram convertidas para int. Após essa correção, rodei o código novamente.
+
+![evidencia30](../Evidencias/evidencia30.png)
+
+Para essa parte, utilizei o modelo dimensional que desenvolvi anteriormente e criei o código correspondente.
+
+O código implementa o modelo dimensional no Apache Spark, criando três tabelas de dimensão:
+* dim_pais
+* dim_artista
+* dim_producao
+
+Cada tabela de dimensão é construída a partir do DataFrame movies, garantindo valores únicos e atribuindo chaves primárias (id_pais, id_artista e id_producao) usando row_number().
+
+Em seguida, o código cria a tabela fato fato_filme, que referencia essas dimensões por meio de joins, incluindo métricas essenciais para análise, como:
+* popularity
+* notaMedia
+* numeroVotos
+* tempoMinutos
+
+Por fim, é adicionada uma chave primária sequencial (id_filme) para os registros da tabela fato, garantindo a organização dos dados.
+
+![evidencia31](../Evidencias/evidencia31.png)
+
+Essa parte, define o caminho de saída no Amazon S3 para armazenar os dados processados na camada Refined do Data Lake. Em seguida, ele salva os quatro DataFrames (dim_pais, dim_artista, dim_producao e fato_filme) no formato Parquet, sobrescrevendo dados existentes.
+
+__EXECUÇÃO NO GLUE:__
+
 Primeiro, utilizei o AWS Lake Formation para criar o banco de dados onde o crawler futuramente adicionará automaticamente uma tabela a partir dos dados armazenados no S3.
 
 ![evidencia5](../Evidencias/evidencia5.png)

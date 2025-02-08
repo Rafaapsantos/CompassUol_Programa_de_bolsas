@@ -4,9 +4,9 @@ from awsglue.utils import getResolvedOptions
 from pyspark.context import SparkContext
 from awsglue.context import GlueContext
 from awsglue.job import Job  
-from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, size, when, row_number
 from pyspark.sql.window import Window
+
 
 # Inicializa o contexto do Glue
 args = getResolvedOptions(sys.argv, ["JOB_NAME"])
@@ -36,9 +36,9 @@ movies = movies.filter(col("anonascimento") != "\\N")
 movies = movies.withColumn("notamedia", when(col("notamedia") == "\\N", None).otherwise(col("notamedia").cast("double")))
 
 # Converter para int
-int_columns = ["numerovotos", "anofalecimento", "anonascimento", "anolancamento", "tempominutos"]
-for col_name in int_columns:
-    movies = movies.withColumn(col_name, when(col(col_name) == "\\N", None).otherwise(col(col_name).cast("int")))
+colunas_int = ["numerovotos", "anofalecimento", "anonascimento", "anolancamento", "tempominutos"]
+for nome_colunas in colunas_int:
+    movies = movies.withColumn(nome_colunas, when(col(nome_colunas) == "\\N", None).otherwise(col(nome_colunas).cast("int")))
     
 # Criação de tabelas dimensionais e fato, utilizando IDs sequenciais para cada dimensão
 
@@ -69,7 +69,7 @@ window_spec = Window.orderBy("id_pais")
 fato_filme = fato_filme.withColumn("id_filme", row_number().over(window_spec))
 
 # Define o caminho de saída para os dados processados para a camada refined
-output_path = "s3://datalake-rafaela-santos/refined/"
+output_path = "s3://datalake-rafaela-santos/Refined/"
 
 # Salva as tabelas dimensionais e a tabela fato no formato Parquet na camada refined do S3
 dim_pais.write.mode("overwrite").parquet(f"{output_path}dim_pais/")
