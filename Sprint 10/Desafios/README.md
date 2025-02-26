@@ -2,45 +2,18 @@
 
 # Perguntas
 
-Primeiro, vou explorar a seguinte questão:
+Fiz algumas alterações nas perguntas, mas as seguintes questões foram respondidas na minha análise:
 
-* Qual foi o ano em que mais filmes de Drama/Romance foram lançados? OK
-
-A partir dela, pretendo expandir a análise com outras perguntas, como:
-
-Incluí mais algumas possíveis perguntas na minha análise.
-
-1. Quais são os 10 filmes mais bem avaliados no gênero Drama/Romance? OK
-2. Quais são os 10 atores que mais participaram de filmes de Drama/Romance? 
-3. Quais são os 3 filmes mais votados no gênero Drama/Romance?
-4. Qual é a média de idade dos atores que atuam em filmes de Drama/Romance?
-5. Quais países mais produzem filmes de Drama/Romance? ok
-6. Existe alguma correlação entre o país de origem e a popularidade (nota média ou número de votos)?
-7. Qual a duração média dos filmes de Drama/Romance? OK
-8. Filmes de quais países têm as maiores notas médias?
-9. Como a popularidade dos filmes de Drama/Romance varia entre os países de produção?
-10. Existe algum padrão entre o idioma original do filme e sua avaliação/popularidade?
-
-Vou detalhar um pouco mais sobre as minhas questões.
-1. Essa análise ajuda a identificar características específicas, como direção, enredo e elenco, que fazem um filme ser altamente avaliado. Também pode revelar tendências no gênero, como preferências por épocas ou diretores.
-
-2. Destaca profissionais com carreiras prolíficas no gênero, ajudando a compreender a preferência da indústria cinematográfica por certos artistas e sua relevância nesse contexto.
-
-3. Revela quais filmes tiveram maior popularidade ou impacto, indicando uma possível correlação entre marketing, distribuição e o interesse do público.
-
-4. Ajuda a identificar o perfil demográfico predominante dos atores no gênero e mostra se existe uma faixa etária mais favorecida para papéis nesse tipo de produção.
-
-5. Identifica os líderes globais na produção do gênero, evidenciando a contribuição cultural e regional para dramas e romances.
-
-6. Revela possíveis vieses regionais na avaliação ou consumo de filmes, ajudando a entender como o público responde a produções com base no país de origem.
-
-7. Mostra o padrão típico de duração para o gênero, ajudando na criação de produções que atendam às expectativas do público.
-
-8. Destaca países reconhecidos pela qualidade de suas produções, seja por direção, roteiro ou outros fatores, ajudando a entender a percepção global de excelência no gênero.
-
-9. Pode revelar quais países dominam o gênero e onde há maior aceitação do público.
-
-10. Pode indicar se filmes em certos idiomas têm maior aceitação global ou regional. Também pode revelar se produções em inglês dominam o mercado ou se há espaço para outros idiomas crescerem.
+1. Existe algum país de origem que tenha uma correlação direta com a alta popularidade dos filmes, ou a popularidade é mais distribuída entre os países?
+2. Qual a duração média dos filmes de Drama/Romance?
+3. Quais países mais produzem filmes de Drama/Romance?
+4. Quais são os 10 filmes mais bem avaliados no gênero Drama/Romance?
+5. Filmes em quais idiomas tendem a ser mais populares?
+6. Há algum padrão ou agrupamento na duração dos filmes de Drama/Romance, como picos em certas faixas de tempo?
+7. Qual é o continente com a maior diversidade de idiomas nos filmes?
+8. Os filmes mais longos tendem a receber notas mais altas, ou há exceções notáveis?
+9. Qual é a média de idade dos atores que atuam em filmes de Drama/Romance?
+10. Qual foi o ano em que mais filmes de Drama/Romance foram lançados?
 
 #
 Antes de fazer com as configurações no QuickSight, precisei voltar à Sprint 9 para corrigir duas colunas que eu não havia tratado anteriormente. Ajustei essas colunas para garantir que os dados estivessem corretos e bem estruturados antes de utilizá-los na ferramenta de visualização.
@@ -113,4 +86,85 @@ Depois ficou assim
 
 ![evidencia12](../Evidencias/evidencia12.png)
 
+Para criar o dashboard, a primeira coisa que fiz foi acessar o site [Color Hunt](https://colorhunt.co/) e escolher uma paleta de cores que combinasse com o meu tema, que é Romance/Drama. Depois de definir a paleta, fui até o QuickSight, cliquei em Edit -> Themes -> My Themes e criei um tema personalizado com as cores selecionadas.
+Também criei uma imagem com um título no Canva para adicionar ao meu dashboard, deixando a apresentação mais visual e organizada.
+
+Antes de começar a criar os gráficos, criei alguns campos calculados para facilitar a visualização dos dados:
+
+* idade_atores: calculei a idade que os atores tinham quando participaram do filme.
+![evidencia16](../Evidencias/evidencia16.png)
+* idioma_continente: agrupei os idiomas por continente.
+![evidencia18](../Evidencias/evidencia18.png)
+* idioma: substituí as siglas dos idiomas pelos seus respectivos nomes para facilitar a compreensão, já que eu não conhecia todas as siglas.
+![evidencia17](../Evidencias/evidencia17.png)
+* países: substituí as siglas dos países pelos seus nomes completos, tornando a visualização mais intuitiva.
+![evidencia19](../Evidencias/evidencia19.png)
+
+Agora vou falar sobre os meus gráficos. Para cada um, vou apresentar a pergunta analisada, uma breve explicação e um print do gráfico que criei para responder à questão.
+
+1. Existe algum país de origem que tenha uma correlação direta com a alta popularidade dos filmes, ou a popularidade é mais distribuída entre os países?
+
+* Identificar se há um ou mais países que dominam a produção de filmes populares em Drama/Romance ou se há uma distribuição mais equilibrada. Isso pode indicar tendências culturais e a força da indústria cinematográfica de certos países no gênero.
+
+![evidencia29](../Evidencias/evidencia29.png)
+
+2. Qual a duração média dos filmes de Drama/Romance?
+
+* Ter uma noção da duração típica desses filmes pode ajudar a entender o padrão de consumo do público. Filmes muito curtos podem indicar histórias mais simples, enquanto filmes mais longos podem sugerir tramas mais profundas e elaboradas.
+
+![evidencia21](../Evidencias/evidencia21.png)
+
+3. Quais países mais produzem filmes de Drama/Romance?
+
+* Descobrir os países que mais investem nesse gênero pode mostrar onde há uma maior demanda ou tradição em narrativas dramáticas e românticas. Isso pode revelar influências culturais e cinematográficas regionais.
+
+![evidencia22](../Evidencias/evidencia22.png)
+
+4. Quais são os 10 filmes mais bem avaliados no gênero Drama/Romance?
+
+* Compreender quais filmes são mais bem avaliados pode revelar padrões em elementos como roteiro, elenco e direção que os tornam marcantes para o público e crítica. Isso também pode ajudar a identificar diretores, roteiristas e atores mais influentes no gênero.
+
+![evidencia23](../Evidencias/evidencia23.png)
+
+5. Filmes em quais idiomas tendem a ser mais populares?
+
+* Avaliar a relação entre idioma e popularidade pode indicar se há um viés para determinadas línguas, como inglês e francês, ou se filmes em idiomas menos falados também conseguem alcançar grande sucesso. Isso pode estar ligado à acessibilidade e distribuição global.
+
+![evidencia24](../Evidencias/evidencia24.png)
+
+6. Há algum padrão ou agrupamento na duração dos filmes de Drama/Romance, como picos em certas faixas de tempo?
+
+*  Identificar se há faixas de tempo mais comuns (ex.: 90-110 min, 120-140 min) pode mostrar preferências do público e dos estúdios em relação à duração ideal para esse tipo de filme. Picos de frequência podem indicar o formato mais aceito para manter o engajamento do espectador.
+
+![evidencia30](../Evidencias/evidencia30.png)
+
+7. Qual é o continente com a maior diversidade de idiomas nos filmes?
+
+*  Avaliar a diversidade linguística nos filmes por continente pode revelar a riqueza cultural das produções cinematográficas e quais regiões investem mais em produções multilíngues. Isso também pode apontar para mercados mais abertos à diversidade cultural.
+
+![evidencia25](../Evidencias/evidencia25.png)
+
+8. Os filmes mais longos tendem a receber notas mais altas, ou há exceções notáveis?
+
+* Descobrir se há uma relação entre a duração e a nota dos filmes pode indicar se filmes mais longos são percebidos como mais profundos e complexos (e, portanto, bem avaliados) ou se há um ponto de saturação onde o tempo de exibição prejudica a experiência do espectador.
+
+![evidencia28](../Evidencias/evidencia28.png)
+
+9. Qual é a média de idade dos atores que atuam em filmes de Drama/Romance?
+
+* Avaliar a idade média dos atores pode indicar padrões de escolha de elenco para esse gênero. Pode ser que existam faixas etárias predominantes, como jovens para romances adolescentes ou atores mais experientes para dramas profundos.
+
+![evidencia26](../Evidencias/evidencia26.png)
+
+10. Qual foi o ano em que mais filmes de Drama/Romance foram lançados?
+
+*  Identificar o pico de lançamentos pode indicar tendências históricas no cinema, como períodos de alta produção para esse gênero. Isso pode estar relacionado a movimentos cinematográficos, mudanças na demanda do público ou avanços na indústria do entretenimento.
+
+![evidencia27](../Evidencias/evidencia27.png)
+
+E este é o dashboard completo, reunindo todas as visualizações e análises que realizei.
+
+![evidencia31](../Evidencias/evidencia31.png)
+
+[Dashboard](../Desafios/Dashboard_movies_romance_drama.pdf)
 
