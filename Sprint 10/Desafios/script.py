@@ -68,7 +68,7 @@ dim_pais = dim_pais.withColumn("id_pais", row_number().over(window_spec))
 
 # Cria a dimensão 'dim_producao' com informações únicas de produção
 window_spec = Window.orderBy("imdb_id")
-dim_producao = movies.select("imdb_id", "titulooriginal", "original_language", "anolancamento").distinct()
+dim_producao = movies.select("imdb_id", "titulooriginal", "original_language", "anolancamento","production_countries").distinct()
 dim_producao = dim_producao.withColumn("id_producao", row_number().over(window_spec))
 
 # Criando a dimensão 'dim_artista' com informações únicas de artistas
@@ -76,18 +76,12 @@ window_spec = Window.orderBy("nomeartista")
 dim_artista = movies.select("nomeartista", "profissao", "anonascimento", "anofalecimento").distinct()
 dim_artista = dim_artista.withColumn("id_artista", row_number().over(window_spec))
 
-# Criando a dimensão 'dim_pais_producao' com informações únicas do país da produção
-window_spec = Window.orderBy("production_countries")
-dim_pais_producao = movies.select("production_countries").distinct()
-dim_pais_producao = dim_pais_producao.withColumn("id_pais_producao", row_number().over(window_spec))
-
 # Criando a tabela fato 'fato_filme' com referências às dimensões criadas
 fato_filme = movies\
     .join(dim_pais, "origin_country", "left")\
     .join(dim_artista, "nomeartista", "left")\
     .join(dim_producao, "imdb_id", "left")\
-    .join(dim_pais_producao, "production_countries", "left")\
-    .select("id_pais", "id_artista", "id_producao","id_pais_producao", "popularity", "notamedia", "numerovotos", "tempominutos")
+    .select("id_pais", "id_artista", "id_producao","popularity", "notamedia", "numerovotos", "tempominutos")
 
 # Adiciona uma chave primária sequencial para os filmes na tabela fato
 window_spec = Window.orderBy("id_pais")
@@ -100,7 +94,6 @@ output_path = "s3://datalake-rafaela-santos/Refined/"
 dim_pais.write.mode("overwrite").parquet(f"{output_path}dim_pais/")
 dim_artista.write.mode("overwrite").parquet(f"{output_path}dim_artista/")
 dim_producao.write.mode("overwrite").parquet(f"{output_path}dim_producao/")
-dim_pais_producao.write.mode("overwrite").parquet(f"{output_path}dim_pais_producao/")
 fato_filme.write.mode("overwrite").parquet(f"{output_path}fato_filme/")
 
 # Finaliza o job do Glue

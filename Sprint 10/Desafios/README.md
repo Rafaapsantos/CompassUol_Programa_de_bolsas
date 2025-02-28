@@ -16,6 +16,13 @@ Fiz algumas alterações nas perguntas, mas as seguintes questões foram respond
 10. Qual foi o ano em que mais filmes de Drama/Romance foram lançados?
 
 #
+
+Com os feedbacks do monitor técnico, refiz minha modelagem, corrigindo um erro. No desenho da Sprint 9, marquei alguns dados como string porque os visualizei assim no Athena, mas, na verdade, já os havia convertido no script da Sprint 9 e esqueci de atualizar no diagrama.
+
+Além disso, não incluí uma tabela tempo na modelagem, pois utilizei apenas os anos (anoNascimento, anoFalecimento, anoLancamento). Pelo que entendi, a criação de uma tabela tempo faz mais sentido quando há datas completas (dia/mês/ano).
+
+![evidencia32](../Evidencias/evidencia32.png)
+
 Antes de fazer com as configurações no QuickSight, precisei voltar à Sprint 9 para corrigir duas colunas que eu não havia tratado anteriormente. Ajustei essas colunas para garantir que os dados estivessem corretos e bem estruturados antes de utilizá-los na ferramenta de visualização.
 
 [script.py](../Desafios/script.py)
@@ -37,10 +44,6 @@ Esse trecho do código que mudei faz o tratamento de colunas que contêm listas 
 
 * Depois de explodir a coluna production_countries, cada linha contém uma struct com informações como nome do país e código do país (ISO 3166-1).
 * Aqui, eu selecionei apenas o código do país (iso_3166_1), substituindo a coluna original.
-
-Por fim, criei uma nova tabela dimensional e a adicionei à tabela fato.
-
-![evidencia15](../Evidencias/evidencia15.png)
 
 Após isso, rodei o código no Glue, executei o crawler e acessei as tabelas para verificar se estava tudo correto.
 
