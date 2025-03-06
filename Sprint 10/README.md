@@ -10,7 +10,7 @@ Não teve exercícios nessa sprint.
 Não teve Certificados nessa sprint
 
 ## Opnião:
-Eu gostei desse desafio, achei bem tranquilo de realizar e não encontrei muitas dificuldades. Utilizei o Athena para consultar e analisar os dados antes de criar o script para rodar no Glue. Isso me ajudou a entender melhor as informações e a estruturar corretamente o processo de transformação.
+Eu amei essa sprint! Adorei criar o dashboard, fazer os gráficos e analisar qual tipo era mais adequado para cada caso. Também gostei muito de escolher as cores e pensar em todos os detalhes.
 
 ## O que aprendi?
 Não teve cursos nessa sprint
