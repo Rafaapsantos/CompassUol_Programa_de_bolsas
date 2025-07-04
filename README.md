@@ -1,4 +1,10 @@
-# CompassUol_Programa_de_bolsas
+# 🚀 Jornada de Dados — Programa de Bolsas Compass UOL
+
+Este repositório reúne todos os **desafios**, **exercícios**, **projetos** e **documentações** desenvolvidos durante os **6 meses do Programa de Bolsas da Compass UOL** na trilha **Data & AI**.
+
+Ao longo dessa jornada, mergulhei no universo de **dados** e **computação em nuvem**, adquirindo conhecimentos técnicos e práticos em diversas ferramentas, linguagens e boas práticas do mercado. Como reconhecimento, recebi um **voucher oficial da AWS** e conquistei com sucesso a **certificação AWS Certified Cloud Practitioner**. 🏆
+
+---
 # Apresentação 
 Meu nome é **Rafaela Aparecida Dos Santos**, resido na cidade de Franca-SP, atualmente sou estudadnte do 4° semestre de **Análise e Desenvolvimento de Sistemas na Fatec Franca** - Faculdade de Tecnologia de Franca Dr Thomaz Novelino, com uma paixão intensa por tecnologia e inovação.
 
@@ -60,4 +66,11 @@ Sou uma pessoa resiliente, responsável e disciplinada, com forte foco em soft s
 9. [Sprint 9](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%209)
 10. [Sprint 10](https://github.com/Rafaapsantos/CompassUol_Programa_de_bolsas/tree/main/Sprint%2010)
     
+---
+
+## 🏅 Certificação Conquistada
+
+📌 **AWS Certified Cloud Practitioner**  
+🎫 Certificação obtida com sucesso ao final do programa.  
+🔗 [Link da minha badge](https://www.credly.com/badges/0b12c301-77fd-49dc-9474-977242287363/public_url)
 
